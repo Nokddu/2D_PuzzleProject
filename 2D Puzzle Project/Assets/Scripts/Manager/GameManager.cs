@@ -7,14 +7,18 @@ public class GameManager : SingletonGameObject<GameManager>
 {
     public static GameManager Ins => Instance;
     public List<bool> GameCleared = new List<bool>();
-    SaveData save;
+    
 
     protected override void Awake()
     {
         base.Awake();
-        save = DataManager.Ins.LoadGameData();
-        GameCleared.Clear();
-        GameCleared = save.isClear;
+        SaveData save = DataManager.Ins.LoadGameData();
+
+        if (save != null)
+        {
+            GameCleared.Clear();
+            GameCleared = save.isClear;
+        }
     }
 
 
@@ -25,7 +29,9 @@ public class GameManager : SingletonGameObject<GameManager>
     public void PuzzleClear(int GameIndex)
     {
         GameCleared[GameIndex] = true;
-        DataManager.Ins.SaveGameData();
+        SaveData saveData = new SaveData();
+        saveData.isClear = GameCleared;
+        DataManager.Ins.SaveGameData(saveData);
     }
 
     /// <summary>

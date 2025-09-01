@@ -13,13 +13,10 @@ public class DataManager : Singleton<DataManager>
        
     }
 
-    public void SaveGameData()
+    public void SaveGameData(SaveData saveData)
     {
-        SaveData saveData = new SaveData();
 
         saveData.hp = 3; // 나중에 플레이어 체력이랑 연결할것.
-
-        saveData.isClear = GameManager.Ins.GameCleared;
 
         string json = JsonUtility.ToJson(saveData,true);
 
@@ -37,7 +34,7 @@ public class DataManager : Singleton<DataManager>
         if (!File.Exists(path))
         {
             Debug.Log($"세이브 파일이 없습니다.{path}에 세이브 파일 생성");
-            return new SaveData();
+            return null;
         }
 
         string json = File.ReadAllText(path);
