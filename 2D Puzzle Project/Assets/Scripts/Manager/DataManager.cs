@@ -16,7 +16,7 @@ public class DataManager : Singleton<DataManager>
     public void SaveGameData(SaveData saveData)
     {
 
-        saveData.hp = 3; // 나중에 플레이어 체력이랑 연결할것.
+        saveData.hp = GameManager.Ins.HP; // 나중에 플레이어 체력이랑 연결할것.
 
         string json = JsonUtility.ToJson(saveData,true);
 

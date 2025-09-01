@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Utils.Management;
 
 public class GameManager : SingletonGameObject<GameManager>
 {
     public static GameManager Ins => Instance;
     public List<bool> GameCleared = new List<bool>();
-    
+    public int HP;
+
 
     protected override void Awake()
     {
@@ -58,5 +60,16 @@ public class GameManager : SingletonGameObject<GameManager>
     public void PlayGame()
     {
         Time.timeScale = 1.0f;
+    }
+
+    public void ResetGame()
+    {
+       int index = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(index);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
