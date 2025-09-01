@@ -16,8 +16,7 @@ public class GameManager : SingletonGameObject<GameManager>
 
         if (save != null)
         {
-            GameCleared.Clear();
-            GameCleared = save.isClear;
+            GameCleared = new List<bool>(save.isClear);
         }
     }
 
