@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6563b00990aae51469fdbe78438b8bb7, type: 3}
+  m_Name: Animation Clip Data (Walk)
+  m_EditorClassIdentifier: 
+  up: {fileID: 7400000, guid: 916ae96c83082f24d8af7a331696d2b8, type: 2}
+  down: {fileID: 7400000, guid: 137e89c4f88e451498c1f744a9e60dee, type: 2}
+  right: {fileID: 7400000, guid: f7c6ef61e4efd6947ae56296f396f2ec, type: 2}
