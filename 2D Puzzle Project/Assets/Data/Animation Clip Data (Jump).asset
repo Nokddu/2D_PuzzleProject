@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6563b00990aae51469fdbe78438b8bb7, type: 3}
+  m_Name: Animation Clip Data (Jump)
+  m_EditorClassIdentifier: 
+  up: {fileID: 7400000, guid: 54d5f0a2bfdfd3d4fb3be1a5c4f6de82, type: 2}
+  down: {fileID: 7400000, guid: aa4cc49c41bcafe4b90a9d488f8e9c8c, type: 2}
+  right: {fileID: 7400000, guid: d536673fce22ab344873cb468ab69f42, type: 2}
