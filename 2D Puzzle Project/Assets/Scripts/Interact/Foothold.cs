@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class Foothold : MonoBehaviour
 
     private bool isOn = false;
     private SpriteRenderer SpriteRenderer;
+
+    public event Action<bool> OnSwitchChanged;
 
     private void Awake()
     {
@@ -30,11 +33,16 @@ public class Foothold : MonoBehaviour
                 foothold.FootholdOff();
             }
         }
+
+        OnSwitchChanged?.Invoke(isOn);
+
     }
 
     private void FootholdOff()
     {
         isOn = false;
         SpriteRenderer.sprite = offSprite;
+
+        OnSwitchChanged?.Invoke(isOn);
     }
 }

@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Sprite openDoor;
+    [SerializeField] private Sprite closeDoor;
+
+    [SerializeField] private Foothold foothold;
+
+    private SpriteRenderer spriteRenderer;
+
+    private void Awake()
     {
-        
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer.sprite = closeDoor;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        if(foothold != null)
+        {
+            foothold.OnSwitchChanged += CheckFootholdChanged;
+        }
+    }
+
+    private void CheckFootholdChanged(bool isOn)
+    {
+        spriteRenderer.sprite = isOn ? openDoor : closeDoor;
     }
 }
