@@ -17,6 +17,8 @@ namespace Backend.Object.Character
         [SerializeField] private bool isJumpable;
         [SerializeField] private bool isMoving;
 
+        public Vector3 Forward => forward;
+
         private ObjectMovementController _controller;
 
         private ObjectControls _controls;
@@ -102,6 +104,6 @@ namespace Backend.Object.Character
             }
 
             _controller.Move(forward, 2);
-        }
+        } 
     }
 }

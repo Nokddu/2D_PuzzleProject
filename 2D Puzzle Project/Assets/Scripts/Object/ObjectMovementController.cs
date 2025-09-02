@@ -69,5 +69,11 @@ namespace Backend.Object
         public Tilemap Tilemap => tilemap;
 
         public bool IsMoving => isMoving;
+
+        public void ForceStop() //테스트용 TestDragon
+        {
+            StopAllCoroutines();
+            isMoving = false;
+        }
     }
 }
