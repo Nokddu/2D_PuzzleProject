@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 40230153541503739}
   - component: {fileID: 3539049108917131317}
+  - component: {fileID: 7501254526188940219}
   m_Layer: 5
   m_Name: PlayerHpUI
   m_TagString: Untagged
@@ -140,6 +141,22 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &7501254526188940219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524580497124309183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b00a258f01b074f963365feccf1258, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthImg:
+  - {fileID: 882579787648359236}
+  - {fileID: 3983464486859240751}
+  - {fileID: 8311013150532777211}
 --- !u!1 &1510411755258305730
 GameObject:
   m_ObjectHideFlags: 0

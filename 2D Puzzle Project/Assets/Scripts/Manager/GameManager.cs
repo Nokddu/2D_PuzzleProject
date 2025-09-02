@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,19 @@ public class GameManager : SingletonGameObject<GameManager>
 {
     public static GameManager Ins => Instance;
     public List<bool> GameCleared = new List<bool>();
-    public int HP;
 
+    [SerializeField] private int hp = 3;
+    public int HP
+    {
+        get => hp;
+        set
+        {
+            hp = Mathf.Clamp(value, 0, 3);
+            OnHpChanged?.Invoke(hp);
+        }
+    }
+
+    public event Action<int> OnHpChanged;
 
     protected override void Awake()
     {
@@ -71,5 +83,17 @@ public class GameManager : SingletonGameObject<GameManager>
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    private void Update() //테스트용
+    {
+        if(Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            HP--;
+        }
+        if(Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            HP++;
+        }
     }
 }
