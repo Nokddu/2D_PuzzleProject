@@ -2,37 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestPlayer : MonoBehaviour
+public class PlayerGetInteract : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float itemPicradius = 5f;
     [SerializeField] private PlayerItemIcon iconManager;
-
-    private Rigidbody2D rb;
-    private Vector2 moveInput;
 
     private Item heldItem = null;
 
     void Start()
     {
-        rb  = GetComponent<Rigidbody2D>();
         iconManager.UpdateIcon(ItemType.None);
     }
 
     void Update()
     {
-        float moveX = Input.GetAxis("Horizontal");
-        float moveY = Input.GetAxis("Vertical");
-        moveInput = new Vector2(moveX, moveY).normalized;
-
         if (Input.GetKeyDown(KeyCode.Z))
         {
             TryInteract();
         }
-    }
-    private void FixedUpdate()
-    {
-        rb.velocity= moveInput * moveSpeed;
     }
     private void TryInteract()
     {
@@ -79,11 +66,7 @@ public class TestPlayer : MonoBehaviour
                     iconManager.UpdateIcon(heldItem.GetItemType());
                 }
                 return;
-
             }
-            
-
         }
     }
-
 }
