@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6563b00990aae51469fdbe78438b8bb7, type: 3}
+  m_Name: Animation Clip Data (Hurt)
+  m_EditorClassIdentifier: 
+  up: {fileID: 7400000, guid: 284f1874437d7ff479d313c21aa6a16b, type: 2}
+  down: {fileID: 7400000, guid: d20f8c0f5673b0f43b9c67b9ef07c3c8, type: 2}
+  right: {fileID: 7400000, guid: baece2f21c8b79244be4fff354bf3812, type: 2}

@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -74,7 +74,7 @@ ScriptedImporter:
     fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
-    defaultPivotSpace: 0
+    defaultPivotSpace: 1
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
@@ -87,7 +87,7 @@ ScriptedImporter:
     fileImportMode: 1
     importHiddenLayers: 0
     layerImportMode: 1
-    defaultPivotSpace: 0
+    defaultPivotSpace: 1
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638923807395918381
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,8 +123,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Master File_Frame_4
     originalName: 
-    pivot: {x: 0.50289017, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -143,8 +143,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 96}
   - name: Master File_Frame_5
     originalName: 
-    pivot: {x: 0.50289017, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -163,8 +163,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 272}
   - name: Master File_Frame_6
     originalName: 
-    pivot: {x: 0.50289017, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -183,8 +183,8 @@ ScriptedImporter:
     uvTransform: {x: 185, y: 272}
   - name: Master File_Frame_7
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -203,8 +203,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 162}
   - name: Master File_Frame_8
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -223,8 +223,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 162}
   - name: Master File_Frame_9
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -243,8 +243,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 293}
   - name: Master File_Frame_10
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -263,8 +263,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 293}
   - name: Master File_Frame_11
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -283,8 +283,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 184}
   - name: Master File_Frame_12
     originalName: 
-    pivot: {x: 0.50289017, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -303,8 +303,8 @@ ScriptedImporter:
     uvTransform: {x: 185, y: 96}
   - name: Master File_Frame_13
     originalName: 
-    pivot: {x: 0.50574714, y: -2.4285715}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -323,8 +323,8 @@ ScriptedImporter:
     uvTransform: {x: 187, y: 74}
   - name: Master File_Frame_14
     originalName: 
-    pivot: {x: 0.50289017, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -343,8 +343,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 118}
   - name: Master File_Frame_15
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -363,8 +363,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 314}
   - name: Master File_Frame_16
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -383,8 +383,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 184}
   - name: Master File_Frame_17
     originalName: 
-    pivot: {x: 0.5, y: -2.4285715}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -403,8 +403,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 206}
   - name: Master File_Frame_18
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -423,8 +423,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 206}
   - name: Master File_Frame_19
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -443,8 +443,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 314}
   - name: Master File_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -463,8 +463,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 228}
   - name: Master File_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -483,8 +483,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 228}
   - name: Master File_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -503,8 +503,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 335}
   - name: Master File_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -523,8 +523,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 335}
   - name: Master File_Frame_20
     originalName: 
-    pivot: {x: 0.50285715, y: -2.2}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -543,8 +543,8 @@ ScriptedImporter:
     uvTransform: {x: 185, y: 4}
   - name: Master File_Frame_21
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -563,8 +563,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 250}
   - name: Master File_Frame_22
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -583,8 +583,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 356}
   - name: Master File_Frame_23
     originalName: 
-    pivot: {x: 0.5, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -603,8 +603,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 356}
   - name: Master File_Frame_24
     originalName: 
-    pivot: {x: 0.50574714, y: -2.2}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -623,8 +623,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 28}
   - name: Master File_Frame_25
     originalName: 
-    pivot: {x: 0.49710983, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -643,8 +643,8 @@ ScriptedImporter:
     uvTransform: {x: 185, y: 118}
   - name: Master File_Frame_26
     originalName: 
-    pivot: {x: 0.49122807, y: -2.5384614}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -663,8 +663,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 377}
   - name: Master File_Frame_27
     originalName: 
-    pivot: {x: 0.48837206, y: -1.9333334}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -683,8 +683,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 51}
   - name: Master File_Frame_28
     originalName: 
-    pivot: {x: 0.48554912, y: -1.8125}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -703,8 +703,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Master File_Frame_29
     originalName: 
-    pivot: {x: 0.48554912, y: -1.9333334}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -723,8 +723,8 @@ ScriptedImporter:
     uvTransform: {x: 186, y: 28}
   - name: Master File_Frame_30
     originalName: 
-    pivot: {x: 0.5, y: -2.357143}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -743,8 +743,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 250}
   - name: Master File_Frame_31
     originalName: 
-    pivot: {x: 0.5, y: -2.75}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -763,8 +763,8 @@ ScriptedImporter:
     uvTransform: {x: 183, y: 377}
   - name: Master File_Frame_32
     originalName: 
-    pivot: {x: 0.5, y: -2.2}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -783,8 +783,8 @@ ScriptedImporter:
     uvTransform: {x: 184, y: 51}
   - name: Master File_Frame_33
     originalName: 
-    pivot: {x: 0.50289017, y: -2.5}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -803,8 +803,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 140}
   - name: Master File_Frame_34
     originalName: 
-    pivot: {x: 0.50285715, y: -2.5714285}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -823,8 +823,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 74}
   - name: Master File_Frame_35
     originalName: 
-    pivot: {x: 0.50289017, y: -2.4285715}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -841,7 +841,2167 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 185, y: 140}
-  spriteSheetImportData: []
+  spriteSheetImportData:
+  - name: Master File_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 377
+      width: 14
+      height: 13
+    spriteID: dc85a398ba4b97d45beb6684149c063d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 80
+      y: 377
+      width: 15
+      height: 12
+    spriteID: 7f8a7a98064ab9040b0cd80da7fdb555
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 377
+      width: 15
+      height: 12
+    spriteID: f1e5d5c260fb2c24897f705a085ba7b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 377
+      width: 11
+      height: 12
+    spriteID: 68cc09d8283329e469fc7c0bfddeff6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 262
+      y: 377
+      width: 13
+      height: 12
+    spriteID: 9d1e9d80988011d44ba0a099069dbcf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 342
+      y: 377
+      width: 13
+      height: 12
+    spriteID: cda26d36b8876d84d8056a1d14726e39
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 356
+      width: 11
+      height: 13
+    spriteID: 72586972a30f88547898667a48298900
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 356
+      width: 13
+      height: 13
+    spriteID: b04ce5c3a8f93a14ebe666d3a640c6e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 356
+      width: 13
+      height: 13
+    spriteID: 7982f35afb525bd45bdefb773f06aac7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 356
+      width: 11
+      height: 13
+    spriteID: e53a7e28e39a13d4a87fa0eab9434d47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 356
+      width: 13
+      height: 13
+    spriteID: 8ab461c45fc45a64ea14a9ee6511cc92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 356
+      width: 13
+      height: 13
+    spriteID: 76e0b5099001d3a4ab9d8a85f4bfb4d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 335
+      width: 11
+      height: 13
+    spriteID: bffada6ffa7ede54e87e0f8fc1177a85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 335
+      width: 13
+      height: 13
+    spriteID: b869f81febdb6bc40a6a2caca032fb6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 335
+      width: 13
+      height: 13
+    spriteID: aa4ca4c0a4c865e41aa3e8092b5f35f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 335
+      width: 11
+      height: 13
+    spriteID: 0b10be9f9efa8db4788e037c2f07e60b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_16
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 335
+      width: 13
+      height: 13
+    spriteID: 389f93d7ffbfee244b0430e772c77fd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_17
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 335
+      width: 13
+      height: 13
+    spriteID: 38e3d799db4118d4fb2ac630a3bae735
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 314
+      width: 11
+      height: 13
+    spriteID: ec7c6e274d9dd9b4eb64bec8fe77d1dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_19
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 314
+      width: 13
+      height: 13
+    spriteID: e5390d56643caff49832edccaa08eb1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_20
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 314
+      width: 13
+      height: 13
+    spriteID: 9ea7358bab6592543b17b9b27db8e4b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 314
+      width: 11
+      height: 13
+    spriteID: 2c8d6c9a77ff03a43ab32380cbd6dd53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 314
+      width: 13
+      height: 13
+    spriteID: 9267ff7ab174b02459e11ebcf54804b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 314
+      width: 13
+      height: 13
+    spriteID: 274b3b32a4bf5dd48a0f0427e9f3d2af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 293
+      width: 11
+      height: 13
+    spriteID: ba893fceeceb915449e50007974dc58f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 293
+      width: 13
+      height: 13
+    spriteID: d5df4c54b82b80448a710fe5e93636a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_26
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 293
+      width: 13
+      height: 13
+    spriteID: 41786444c7c00f340a40de14af53af79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_27
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 293
+      width: 11
+      height: 13
+    spriteID: cf21c432145024c47b795230eec0ec8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_28
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 293
+      width: 13
+      height: 13
+    spriteID: 0f00376311e7ff84ebc62c84b3578ff2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_29
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 293
+      width: 13
+      height: 13
+    spriteID: 9cdd7d51da066b84d86f871eee6bf1e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 272
+      width: 13
+      height: 13
+    spriteID: 5e466b24b38915545a98669405859e8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 272
+      width: 13
+      height: 13
+    spriteID: 2f7c927bfd588ae45af30aac38123a0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 272
+      width: 13
+      height: 13
+    spriteID: a1928e55c2f3cef449317f9167da3c36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_33
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 272
+      width: 13
+      height: 13
+    spriteID: 31fb030e96c89834597ce50c42c026ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_34
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 272
+      width: 13
+      height: 13
+    spriteID: fd1d9852f91594e4fb739aa8819c4afc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 272
+      width: 13
+      height: 13
+    spriteID: 03defd744eb8ce44197da167acffe9ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 250
+      width: 11
+      height: 14
+    spriteID: 8a2c47430dacc3e40b1923761002dee0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 250
+      width: 13
+      height: 14
+    spriteID: 8f7aa4e553b76d94093762e4e390aff5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_38
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 250
+      width: 13
+      height: 13
+    spriteID: f5f9e71c235353a4684961aae75bda71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_39
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 250
+      width: 11
+      height: 14
+    spriteID: f1b20a0abe5aa0645a92703ea5f8e77a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_40
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 250
+      width: 13
+      height: 14
+    spriteID: 27d84cd3a4ffec942a27c9a2ce80679c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 250
+      width: 13
+      height: 14
+    spriteID: 8fcdeae39477afe409f98dc318a93e10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_42
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 228
+      width: 11
+      height: 14
+    spriteID: 33e85144ebcadf846a8ca90f5198a1d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_43
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 228
+      width: 13
+      height: 14
+    spriteID: 90c9f19bd9a5624449ed5e76869c0190
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_44
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 228
+      width: 13
+      height: 14
+    spriteID: 8ed14510831f4304499a80939a6db59a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_45
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 228
+      width: 11
+      height: 14
+    spriteID: ec6d161453cf3e7469853711c26576d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_46
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 228
+      width: 13
+      height: 14
+    spriteID: d5122322a657e91478b87fcf6d54b1b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_47
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 228
+      width: 13
+      height: 14
+    spriteID: 9255ba09be7085149a3780fddebebee7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_48
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 206
+      width: 11
+      height: 14
+    spriteID: 8c602c8e1c257114db05f8bd5c22a8c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_49
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 206
+      width: 13
+      height: 14
+    spriteID: d44a0461ec2775445a603bd7745f02bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_50
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 206
+      width: 13
+      height: 14
+    spriteID: 658f3fafac9d9394fa8ae7f12918fcbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_51
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 206
+      width: 11
+      height: 14
+    spriteID: 8993eb39432bbb94496ec63a28ee0e42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_52
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 206
+      width: 13
+      height: 14
+    spriteID: a6733c05ed2391f438b334b027519c63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_53
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 206
+      width: 13
+      height: 14
+    spriteID: 69e71bb000690a74cb69b5186c0c7f50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_54
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 184
+      width: 11
+      height: 14
+    spriteID: b6e2963dde927e244afdd2c1b4efa216
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_55
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 184
+      width: 13
+      height: 14
+    spriteID: 66ed6a6284059ed40bf1a6f751f2a05f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_56
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 184
+      width: 13
+      height: 14
+    spriteID: 175195f9d92a46841bdcfcc04a85ee5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_57
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 184
+      width: 11
+      height: 14
+    spriteID: e72236e2fddbc164ca299031e561a7cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_58
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 184
+      width: 13
+      height: 14
+    spriteID: 7b55bd8c4f6608847920ddd08fec0068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_59
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 184
+      width: 13
+      height: 14
+    spriteID: 96216dbdcbcdfd54baf7d9767adcae3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_60
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 162
+      width: 11
+      height: 14
+    spriteID: 97c9c55f5548cb14eb8dff7b258466c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_61
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 83
+      y: 162
+      width: 13
+      height: 14
+    spriteID: 9324d4678563f004cae38c0f1bcc0ec4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_62
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 162
+      width: 13
+      height: 14
+    spriteID: b8df931c22d97a54b92ce005997689aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_63
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 162
+      width: 11
+      height: 14
+    spriteID: f7e04b5cf9490c8478928b194004fd94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_64
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 162
+      width: 13
+      height: 14
+    spriteID: e3be75e3a03795643b2442114795b2ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_65
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 162
+      width: 13
+      height: 14
+    spriteID: 66c6dc6d2c0b7744dbb4b1afda16f5d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_66
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 140
+      width: 13
+      height: 14
+    spriteID: 8e9656d77fa31c3469224fc1bf431d66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_67
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 140
+      width: 13
+      height: 14
+    spriteID: c4ca4cf354d3a7d46b1274b7a6a35467
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_68
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 140
+      width: 13
+      height: 14
+    spriteID: 255481c786319f748a1a80708af029d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_69
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 140
+      width: 13
+      height: 14
+    spriteID: b350ae24003e59a4fba8f72265ed026a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_70
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 140
+      width: 13
+      height: 14
+    spriteID: 347377253e7421e47a9a5230f7cfedee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_71
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 140
+      width: 13
+      height: 14
+    spriteID: b9d0d861b8cdf7449b842b83109bc5e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_72
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 118
+      width: 13
+      height: 14
+    spriteID: da532612d6d7c424f92724ae5288b183
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_73
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 118
+      width: 13
+      height: 14
+    spriteID: 80bdffd514006bb4e8f7b5501d6f54f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_74
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 118
+      width: 13
+      height: 14
+    spriteID: 4113c8654bfa5724f8450e71844b6356
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_75
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 118
+      width: 12
+      height: 14
+    spriteID: 9e27b5a86dfa42f41b38a1624c99141f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_76
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 118
+      width: 15
+      height: 13
+    spriteID: cd0372285a23a5c4d8ce4f62e4108dd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_77
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 118
+      width: 15
+      height: 13
+    spriteID: 0b83129568280ab4099bccb426cce10d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_78
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 96
+      width: 13
+      height: 14
+    spriteID: c3353302cdbacd747a2a03371eecd6e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_79
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 96
+      width: 13
+      height: 14
+    spriteID: 818ffc60ed59c6e44816ce43036c70b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_80
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 96
+      width: 13
+      height: 14
+    spriteID: 0afa06c6a56af8446850724874e844c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_81
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 96
+      width: 13
+      height: 14
+    spriteID: effd38b4bff946e46a150328cd053291
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_82
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 96
+      width: 13
+      height: 14
+    spriteID: 9e3578b706f443c46998f8ce07a5de8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_83
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 96
+      width: 13
+      height: 14
+    spriteID: 9ffcb167589d5c94a823fae68662436e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_84
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 74
+      width: 15
+      height: 14
+    spriteID: fbd4759a19d24d942ace8fe4264c4a72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_85
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 74
+      width: 15
+      height: 14
+    spriteID: caeae26fe5450e94fb8327832aa53d1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_86
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 74
+      width: 15
+      height: 14
+    spriteID: 8182fe2e0bbf92247ac753e939f9f1c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_87
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 74
+      width: 15
+      height: 14
+    spriteID: 788c6ea36e902ed47b86c640f8ff78ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_88
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 74
+      width: 13
+      height: 14
+    spriteID: da91a5927b7818b4a9786945c0f67655
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_89
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 348
+      y: 74
+      width: 13
+      height: 14
+    spriteID: f1c9337a27fdae84d980f4387c0460a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_90
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 55
+      width: 19
+      height: 9
+    spriteID: 2e476636fdee01a4dab3454d24b9903a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_91
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 51
+      width: 17
+      height: 9
+    spriteID: 671dd56009c395b4297606919c2dc091
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_92
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 159
+      y: 55
+      width: 17
+      height: 11
+    spriteID: d83233c128b84bc4a8ba212d6a0b1aff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_93
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 51
+      width: 11
+      height: 15
+    spriteID: 93985ce02f4ac7f40b964ac6d20727f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_94
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 263
+      y: 51
+      width: 13
+      height: 15
+    spriteID: d2d61b5d071561744b628cfcae43bc03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_95
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 51
+      width: 13
+      height: 15
+    spriteID: 5caaa8ed056d0994c87cbb2e94818aab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_96
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 28
+      width: 13
+      height: 15
+    spriteID: bea77d866d8936e4fb827ed9b618aaeb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_97
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 28
+      width: 13
+      height: 15
+    spriteID: b9b6d370407a287489b50baa22cb069a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_98
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 165
+      y: 28
+      width: 13
+      height: 14
+    spriteID: b7793244c602189479c15dd0d15aa91d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_99
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 32
+      width: 19
+      height: 9
+    spriteID: 0496d6de06406c149b8fc835e4251cbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_100
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 28
+      width: 19
+      height: 9
+    spriteID: f32cacc21b98cf74f9631fb031796bfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_101
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 32
+      width: 19
+      height: 11
+    spriteID: 782f028ff118fb140a0a1456da256955
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_102
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 8
+      width: 19
+      height: 10
+    spriteID: 31a9cb9807bd9ca4e81dd3d07acec041
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_103
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 4
+      width: 19
+      height: 10
+    spriteID: f7209fe608dbd0440b3283d8d0f66dcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_104
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 8
+      width: 19
+      height: 12
+    spriteID: d65a72e5d3b81af488ee33cea8a08691
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_105
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 4
+      width: 13
+      height: 15
+    spriteID: f347f30798d0f7742abb7bf5ae33af22
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_106
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 265
+      y: 4
+      width: 15
+      height: 15
+    spriteID: adf2ecd5a0144df40ad123b5e8571f27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Master File_107
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 345
+      y: 4
+      width: 15
+      height: 14
+    spriteID: bf701ddbb10f16844912f26e14bfc235
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
     guid: 1732610386
@@ -1140,7 +3300,43 @@ ScriptedImporter:
       spriteId: b72cfeae9962f284f967242d58a4fbce
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
