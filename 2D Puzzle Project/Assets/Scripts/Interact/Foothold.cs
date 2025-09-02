@@ -8,11 +8,13 @@ public class Foothold : MonoBehaviour
     [SerializeField] private Sprite onSprite;
     [SerializeField] private Sprite offSprite;
     [SerializeField] private Foothold[] otherFootholds;
+    [SerializeField] private BoxCollider2D door;
 
     private bool isOn = false;
+    public bool isMain;
     private SpriteRenderer SpriteRenderer;
 
-    public event Action<bool> OnSwitchChanged;
+    public event Action<bool,bool> OnSwitchChanged;
 
     private void Awake()
     {
@@ -24,17 +26,22 @@ public class Foothold : MonoBehaviour
     {
         isOn = !isOn;
 
+        Debug.Log(isOn);
+
         SpriteRenderer.sprite = isOn ? onSprite : offSprite;
 
-        if(isOn && otherFootholds.Length > 0)
+
+        if (isOn && otherFootholds.Length > 0)
         {
-            foreach(var foothold in otherFootholds)
+            foreach (var foothold in otherFootholds)
             {
                 foothold.FootholdOff();
             }
         }
 
-        OnSwitchChanged?.Invoke(isOn);
+
+
+        OnSwitchChanged?.Invoke(isOn, isMain);
 
     }
 
@@ -43,6 +50,6 @@ public class Foothold : MonoBehaviour
         isOn = false;
         SpriteRenderer.sprite = offSprite;
 
-        OnSwitchChanged?.Invoke(isOn);
+        OnSwitchChanged?.Invoke(isOn, isMain);
     }
 }
