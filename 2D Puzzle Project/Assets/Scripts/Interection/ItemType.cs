@@ -8,4 +8,5 @@ public enum ItemType
     Duck,
     RedBall,
     Book,
+    OpenBook
 }

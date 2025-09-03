@@ -24,8 +24,6 @@ public class Chair : MonoBehaviour
         transform.position = initiolPosition;
     }
 
-
-
     public void SetInitialPosition(Vector2 pos)
     {
         initiolPosition = pos;
