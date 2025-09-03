@@ -23,6 +23,8 @@ namespace Backend.Object
 
         private void Awake()
         {
+            _collider = GetComponent<BoxCollider2D>();
+
             // Initialize the position of the current cell containing the player character on the tilemap.
             _position = GetCellPosition(transform.position);
 
