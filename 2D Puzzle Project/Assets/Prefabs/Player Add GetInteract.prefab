@@ -714,6 +714,7 @@ MonoBehaviour:
   forward: {x: 1, y: 0, z: 0}
   isMoveable: 0
   isJumpable: 0
+  isPushable: 0
   isMoving: 0
   isJumping: 0
   isPressed: 0

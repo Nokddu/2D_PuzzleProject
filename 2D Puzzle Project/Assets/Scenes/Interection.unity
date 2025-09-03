@@ -228,6 +228,14 @@ PrefabInstance:
       value: Table
       objectReference: {fileID: 0}
     - target: {fileID: 6599420047628078467, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599420047628078467, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599420047628078467, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.65445
       objectReference: {fileID: 0}
@@ -272,6 +280,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+--- !u!1 &442906309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442906310}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &442906310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442906309}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696808768
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,6 +462,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 676236121495679502, guid: 72397adacb08c244cb5b03084c1620f9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 676236121495679502, guid: 72397adacb08c244cb5b03084c1620f9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -437,3 +484,4 @@ SceneRoots:
   - {fileID: 3437887049769913773}
   - {fileID: 1796420021}
   - {fileID: 148491521}
+  - {fileID: 442906310}

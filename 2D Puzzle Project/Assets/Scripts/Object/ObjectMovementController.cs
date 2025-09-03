@@ -36,6 +36,7 @@ namespace Backend.Object
             var distance = direction.ToInt() * length;
 
             StartCoroutine(Moving(distance, scale));
+            
         }
 
         private IEnumerator Moving(Vector3Int distance, float scale)
