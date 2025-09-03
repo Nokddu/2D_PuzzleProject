@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,53 +9,45 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Sprite openDoor;
     [SerializeField] private Sprite closeDoor;
-    [SerializeField] private SpriteRenderer doorLight;
-    [SerializeField] private Foothold[] foothold;
-    [SerializeField] private BoxCollider2D col;
-
+    [SerializeField] private SceneMoveTrigger scenePortal;
     private SpriteRenderer spriteRenderer;
-
-    public bool isStart;
+    [SerializeField] private bool isStartDoor;
 
     private void Awake()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        CloseDoor();
+    }
+
+    public void OpenDoor()
+    {
+        if(isStartDoor)
+        {
+            spriteRenderer.color = Color.green;
+        }
+        spriteRenderer.sprite = openDoor;
+
+        if (scenePortal != null)
+        {
+            var col = scenePortal.GetComponent<BoxCollider2D>();
+            if (col != null)
+                col.enabled = true;  
+        }
+    }
+
+    public void CloseDoor()
+    {
+        if(isStartDoor)
+        {
+            spriteRenderer.color = Color.red;
+        }
         spriteRenderer.sprite = closeDoor;
-    }
 
-    private void Start()
-    {
-        if(foothold != null)
+        if (scenePortal != null)
         {
-            foothold[0].OnSwitchChanged += CheckFootholdChanged;
-            foothold[1].OnSwitchChanged += CheckFootholdChanged;
+            var col = scenePortal.GetComponent<BoxCollider2D>();
+            if (col != null)
+                col.enabled = false;
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (isStart)
-        {
-            SceneManager.LoadScene(2);
-        }
-        else
-        {
-            GameManager.Ins.ExitGame();
-        }
-    }
-
-    private void CheckFootholdChanged(bool isOn, bool isMain)
-    {
-        spriteRenderer.sprite = isOn ? openDoor : closeDoor;
-        col.enabled = isOn;
-        isStart = isMain;
-        if (isMain)
-        {
-            doorLight.color = Color.white;
-        }
-        else
-        {
-            doorLight.color = Color.red;
-        }
-    }
+    } 
 }

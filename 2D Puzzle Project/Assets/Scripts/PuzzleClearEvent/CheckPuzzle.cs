@@ -6,7 +6,6 @@ public class CheckPuzzle : MonoBehaviour
 {
     [SerializeField] private ChairManager chairManager;
     [SerializeField] private ItemPlaceSpot itemPlace;
-
     [SerializeField] private BaseChapClear BaseChapClear;
 
     public bool isClear = false;
@@ -33,7 +32,7 @@ public class CheckPuzzle : MonoBehaviour
         if(chairclear && itemClear)
         {
             Debug.Log("조건 달성");
-            BaseChapClear.ClearEvent();
+            BaseChapClear.ClearEvent(); 
             isClear = true;
         }
     }

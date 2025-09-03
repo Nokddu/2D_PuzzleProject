@@ -8,49 +8,60 @@ public class Foothold : MonoBehaviour
     [SerializeField] private Sprite onSprite;
     [SerializeField] private Sprite offSprite;
     [SerializeField] private Foothold[] otherFootholds;
-    [SerializeField] private BoxCollider2D door;
+    [SerializeField] private Door connectedDoor;
 
     private bool isOn = false;
-    public bool IsOn => isOn;
-    public bool isMain;
-    private SpriteRenderer SpriteRenderer;
 
-    public event Action<bool,bool> OnSwitchChanged;
+    private SpriteRenderer spriteRenderer;
 
     private void Awake()
     {
-        SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        SpriteRenderer.sprite = offSprite;
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer.sprite = offSprite;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isOn = !isOn;
+        if (!collision.CompareTag("Player")) return;
 
-        Debug.Log(isOn);
-
-        SpriteRenderer.sprite = isOn ? onSprite : offSprite;
-
-
-        if (isOn && otherFootholds.Length > 0)
+        if(isOn)
         {
-            foreach (var foothold in otherFootholds)
+            FootholdOff();
+        }
+        else
+        {
+            FootholdOn();
+        }
+    }
+
+    private void FootholdOn()
+    {
+        isOn = true;
+        spriteRenderer.sprite = onSprite;
+
+        for(int i = 0; i  < otherFootholds.Length; i++)
+        {
+            if(otherFootholds[i] != null)
             {
-                foothold.FootholdOff();
+                otherFootholds[i].FootholdOff();
             }
         }
 
-
-
-        OnSwitchChanged?.Invoke(isOn, isMain);
+        if(connectedDoor != null)
+        {
+            connectedDoor.OpenDoor();
+        }
 
     }
 
     private void FootholdOff()
     {
         isOn = false;
-        SpriteRenderer.sprite = offSprite;
+        spriteRenderer.sprite = offSprite;
 
-        OnSwitchChanged?.Invoke(isOn, isMain);
+        if(connectedDoor != null)
+        {
+            connectedDoor.CloseDoor();
+        }
     }
 }
