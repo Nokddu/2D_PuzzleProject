@@ -11,6 +11,7 @@ public class Foothold : MonoBehaviour
     [SerializeField] private BoxCollider2D door;
 
     private bool isOn = false;
+    public bool IsOn => isOn;
     public bool isMain;
     private SpriteRenderer SpriteRenderer;
 

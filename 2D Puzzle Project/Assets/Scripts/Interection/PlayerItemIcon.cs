@@ -7,6 +7,7 @@ public class PlayerItemIcon : MonoBehaviour
     [SerializeField] private GameObject duckIcon;   
     [SerializeField] private GameObject bookIcon;   
     [SerializeField] private GameObject redBallIcon;
+    [SerializeField] private GameObject openbookIcon;
 
     [Header("Z키")]
     [SerializeField] private GameObject ZIcon;
@@ -31,10 +32,14 @@ public class PlayerItemIcon : MonoBehaviour
             case ItemType.RedBall:
                 redBallIcon.SetActive(true);
                 break;
+            case ItemType.OpenBook:
+                openbookIcon.SetActive(true);
+                break;
             case ItemType.None:
                 duckIcon.SetActive(false);
                 bookIcon.SetActive(false);
                 redBallIcon.SetActive(false);
+                openbookIcon.SetActive(false);
                 Debug.Log("아이콘 초기화");
                 break;
         }

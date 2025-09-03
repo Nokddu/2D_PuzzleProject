@@ -11,6 +11,13 @@ public class ItemPlaceSpot : MonoBehaviour
 
     [SerializeField] private Transform placePoint;
 
+    [SerializeField] private bool hasItemDebug; //체크용 추후삭제
+
+    private void Update()
+    {
+        hasItemDebug = HasItem;
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -38,8 +45,10 @@ public class ItemPlaceSpot : MonoBehaviour
 
     public Item GetItem()
     {
+        if (placedItem == null) return null;
         Debug.Log("안녕");
-        return placedItem;
+        Item temp = placedItem;
+        placedItem = null;
+        return temp;
     }
-
 }

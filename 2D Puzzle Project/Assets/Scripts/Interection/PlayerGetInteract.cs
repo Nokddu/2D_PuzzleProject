@@ -7,7 +7,8 @@ public class PlayerGetInteract : MonoBehaviour
     [SerializeField] private float itemPicradius = 5f;
     [SerializeField] private PlayerItemIcon iconManager;
 
-    private Item heldItem = null;
+    [SerializeField] private Item heldItem = null;
+
 
     void Start()
     {
@@ -61,11 +62,15 @@ public class PlayerGetInteract : MonoBehaviour
                     Item SpotItem = spot.GetItem();
                     spot.PlaceItem(heldItem);
                     heldItem = SpotItem;
-                    heldItem.OnPick();
-                    iconManager.UpdateIcon(ItemType.None);
-                    iconManager.UpdateIcon(heldItem.GetItemType());
-                }
-                return;
+
+                    if(heldItem != null)
+                    {
+                        heldItem.OnPick();
+                    }
+
+                    iconManager.UpdateIcon(heldItem != null ? heldItem.GetItemType() : ItemType.None);
+                    return;
+                }      
             }
         }
     }
