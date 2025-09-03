@@ -198,5 +198,7 @@ namespace Backend.Object.Character
             
             return a || b || c || d;
         }
+
+        public Vector3 Forward => forward;
     }
 }

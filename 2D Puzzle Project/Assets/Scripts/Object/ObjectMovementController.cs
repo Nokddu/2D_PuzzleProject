@@ -17,6 +17,8 @@ namespace Backend.Object
         [Header("Debug Information")]
         [SerializeField] private bool isMoving;
 
+        private BoxCollider2D _collider;
+
         private Vector3Int _position;
 
         private void Awake()
@@ -36,6 +38,7 @@ namespace Backend.Object
 
         private IEnumerator Moving(Vector3Int distance, float scale)
         {
+            _collider.enabled = false;
             isMoving = true;
 
             var position = _position + distance;
@@ -53,6 +56,7 @@ namespace Backend.Object
 
             _position = position;
 
+            _collider.enabled = true;
             isMoving = false;
         }
 

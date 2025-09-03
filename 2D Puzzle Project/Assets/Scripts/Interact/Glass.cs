@@ -1,22 +1,15 @@
 using Backend.Object;
 using Backend.Object.Character;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Glass : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        var player = collision.GetComponent<PlayerCharacterMovementController>();
-
-        if(player != null )
+        if (collision.TryGetComponent<PlayerCharacterMovementController>(out var component))
         {
-            var controller = player.GetComponent<ObjectMovementController>();
-
-            controller.ForceStop();
-
-            controller.Move(-player.Forward);
+            var controller = collision.GetComponent<ObjectMovementController>();
+            controller.Move(-component.Forward, 5f);
 
             GameManager.Ins.HP--;
         }
