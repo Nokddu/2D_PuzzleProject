@@ -8,7 +8,9 @@ public class CheckPuzzle : MonoBehaviour
     [SerializeField] private ItemPlaceSpot itemPlace;
     [SerializeField] private Foothold foothold;
 
-    private bool isClear = false;
+    [SerializeField] private BaseChapClear BaseChapClear;
+
+    public bool isClear = false;
 
     private void Update()
     {
@@ -33,6 +35,7 @@ public class CheckPuzzle : MonoBehaviour
         if(chairclear && itemClear && footholdClear)
         {
             Debug.Log("조건 달성");
+            BaseChapClear.ClearEvent();
             isClear = true;
         }
     }

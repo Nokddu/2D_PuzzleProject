@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2754607544774407439}
   - component: {fileID: 3390988856029658064}
   - component: {fileID: 873089014538846868}
-  m_Layer: 0
+  - component: {fileID: 2452055104795884638}
+  m_Layer: 8
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6449123383086354013}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.85, y: 1.28, z: -0.010057082}
+  m_LocalPosition: {x: -2.67, y: -4.03, z: -0.010057082}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -95,7 +96,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6449123383086354013}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -171,3 +172,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25181f356be3ecc49b19c7b58664f1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2452055104795884638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6449123383086354013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c41e1728278557d42802898c1d599bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
+  speed: 5
+  isMoving: 0
