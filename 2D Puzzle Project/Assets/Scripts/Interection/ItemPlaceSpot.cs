@@ -13,6 +13,8 @@ public class ItemPlaceSpot : MonoBehaviour
 
     [SerializeField] private bool hasItemDebug; //체크용 추후삭제
 
+    public Item PlacedItem => placedItem;
+
     private void Update()
     {
         hasItemDebug = HasItem;
