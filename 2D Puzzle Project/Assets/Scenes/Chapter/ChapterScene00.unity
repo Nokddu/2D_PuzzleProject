@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fffb81fee9c894bbe0322611c4a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 1
+  sceneNum: 2
 --- !u!61 &448059251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1604,6 +1604,10 @@ PrefabInstance:
       propertyPath: doorLight
       value: 
       objectReference: {fileID: 581462359}
+    - target: {fileID: 2623663295035885635, guid: 92f2849bd43c329478a37c5ef552a333, type: 3}
+      propertyPath: isStartDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2623663295035885635, guid: 92f2849bd43c329478a37c5ef552a333, type: 3}
       propertyPath: scenePortal
       value: 

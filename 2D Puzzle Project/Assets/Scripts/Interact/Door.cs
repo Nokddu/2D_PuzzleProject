@@ -12,6 +12,7 @@ public class Door : MonoBehaviour
     [SerializeField] private SceneMoveTrigger scenePortal;
     private SpriteRenderer spriteRenderer;
     [SerializeField] private bool isStartDoor;
+    [SerializeField] private SpriteRenderer doorLight;
 
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class Door : MonoBehaviour
     {
         if(isStartDoor)
         {
-            spriteRenderer.color = Color.green;
+            doorLight.color = Color.green;
         }
         spriteRenderer.sprite = openDoor;
 
@@ -39,7 +40,7 @@ public class Door : MonoBehaviour
     {
         if(isStartDoor)
         {
-            spriteRenderer.color = Color.red;
+            doorLight.color = Color.red;
         }
         spriteRenderer.sprite = closeDoor;
 

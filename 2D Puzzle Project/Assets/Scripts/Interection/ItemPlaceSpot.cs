@@ -5,8 +5,7 @@ using UnityEngine;
 public class ItemPlaceSpot : MonoBehaviour
 {
     private Chair placedChair;
-    private Item placedItem;
-    public Item PlcedItem => placedItem;
+    public Item placedItem;
     public bool HasItem => placedItem != null;
     public bool IsPlaced => placedChair != null;
 

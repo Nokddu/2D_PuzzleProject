@@ -36,9 +36,4 @@ public class CheckPuzzle : MonoBehaviour
             isClear = true;
         }
     }
-
-    //public bool Test()
-    //{
-    //    return itemPlace.PlacedItem.GetItemType() == ItemType.OpenBook ? true : false;
-    //}
 }
