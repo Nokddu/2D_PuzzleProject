@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331fa92f05976654c92eac31ba063727, type: 3}
+  m_Name: Right (Death)
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: -7272195772951337803, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: -4394661134097203721, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: 6985857956249913483, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: -77956757130688816, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: 3737584162850044667, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: 5331162959045635874, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  duration: 0.4

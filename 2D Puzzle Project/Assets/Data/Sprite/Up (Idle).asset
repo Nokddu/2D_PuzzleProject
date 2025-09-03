@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331fa92f05976654c92eac31ba063727, type: 3}
+  m_Name: Up (Idle)
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: 3411631888680148719, guid: 1cbd4a8b6cfbd2b4d9cb9c5059e801ef, type: 3}
+  - {fileID: -3457278408585903101, guid: 1cbd4a8b6cfbd2b4d9cb9c5059e801ef, type: 3}
+  - {fileID: 494466533509001558, guid: 1cbd4a8b6cfbd2b4d9cb9c5059e801ef, type: 3}
+  - {fileID: -3563657601482145442, guid: 1cbd4a8b6cfbd2b4d9cb9c5059e801ef, type: 3}
+  duration: 0.4

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6563b00990aae51469fdbe78438b8bb7, type: 3}
+  m_Name: Animation Clip Data (Idle)
+  m_EditorClassIdentifier: 
+  up: {fileID: 11400000, guid: fcabe449bdad74246851d602f381aba4, type: 2}
+  down: {fileID: 11400000, guid: 68a9b1ad1c2e02244901dc3a5ac49951, type: 2}
+  right: {fileID: 11400000, guid: 191ff5715af13454b9e95be93e3b2835, type: 2}

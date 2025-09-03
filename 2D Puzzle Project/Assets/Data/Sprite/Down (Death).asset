@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331fa92f05976654c92eac31ba063727, type: 3}
+  m_Name: Down (Death)
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: -1860491312699681741, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: 9098594214083905022, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: -5460915655119965310, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: 3405006941515851141, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: 2943343953128365796, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  - {fileID: 8541938350140594790, guid: 582f319ff9c92e64c99dc174208b1b8f, type: 3}
+  duration: 0.4

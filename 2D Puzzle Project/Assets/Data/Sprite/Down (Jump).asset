@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331fa92f05976654c92eac31ba063727, type: 3}
+  m_Name: Down (Jump)
+  m_EditorClassIdentifier: 
+  images:
+  - {fileID: 153115059, guid: 46b6259c3f0c4e54a95736d44d56f108, type: 3}
+  - {fileID: -248392427, guid: 46b6259c3f0c4e54a95736d44d56f108, type: 3}
+  - {fileID: -715058101, guid: 46b6259c3f0c4e54a95736d44d56f108, type: 3}
+  - {fileID: 1298206420, guid: 46b6259c3f0c4e54a95736d44d56f108, type: 3}
+  - {fileID: -668449903, guid: 46b6259c3f0c4e54a95736d44d56f108, type: 3}
+  - {fileID: -1986143034, guid: 46b6259c3f0c4e54a95736d44d56f108, type: 3}
+  duration: 0.4
