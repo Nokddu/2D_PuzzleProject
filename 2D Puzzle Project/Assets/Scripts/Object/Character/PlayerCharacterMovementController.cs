@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Backend.Util;
 using Backend.Util.Input;
+using Backend.Util.Extension;
 
 namespace Backend.Object.Character
 {
@@ -19,6 +21,7 @@ namespace Backend.Object.Character
         [SerializeField] private Vector3 forward = Vector3.right;
         [SerializeField] private bool isMoveable;
         [SerializeField] private bool isJumpable;
+        [SerializeField] private bool isPushable;
         [SerializeField] private bool isMoving;
         [SerializeField] private bool isJumping;
         [SerializeField] private bool isPressed;
@@ -29,6 +32,7 @@ namespace Backend.Object.Character
         private ObjectControls _controls;
 
         private PlayerCharacterAnimationState _state = PlayerCharacterAnimationState.Right;
+        private RaycastHit2D[] _hits;
         private Vector3 _direction;
         private int _count;
 
@@ -38,6 +42,8 @@ namespace Backend.Object.Character
             _controller = GetComponent<ObjectMovementController>();
 
             _controls = new ObjectControls();
+
+            _hits = new RaycastHit2D[2];
         }
 
         private void OnEnable()
@@ -65,30 +71,9 @@ namespace Backend.Object.Character
 
         private void Update()
         {
-            var position = new Vector2(transform.position.x, transform.position.y);
-            var direction = new Vector2(forward.x, forward.y);
-            var hits = Physics2D.RaycastAll(position, direction, 2f, mask);
-
-            Array.Sort(hits, (left, right) => left.distance.CompareTo(right.distance));
-
-            isMoveable = hits.Length == 0 || hits[0].distance > 1f;
-            isJumpable = hits.Length != 2;
-            
-            _count = hits.Length != 0 && hits[0].distance > 1f ? 1 : 2;
-
-#if UNITY_EDITOR
-
-            Debug.DrawLine(transform.position, transform.position + forward * 2f, Color.red);
-
-            if (hits.Length > 0)
-            {
-                Debug.DrawLine(transform.position, hits[0].point, Color.green);
-            }
-
-#endif
+            Detect();
 
             isPressed = IsPressed();
-            
             if (isPressed)
             {
                 _animation.Play(_state | PlayerCharacterAnimationState.Walk, true);
@@ -98,12 +83,17 @@ namespace Backend.Object.Character
                 _animation.Play(_state | PlayerCharacterAnimationState.Idle, true);
             }
 
-            if (isMoveable == false || _direction == Vector3.zero || _controller.IsMoving)
+            if (isPressed && isPushable)
             {
-                return;
+                IMoveable moveable = _hits[0].collider.GetComponent<ObjectMovementController>();
+
+                moveable.Move(forward, 5f);
             }
 
-            _controller.Move(_direction, 5f);
+            if (isMoveable && _direction != Vector3.zero && _controller.IsMoving == false)
+            {
+                _controller.Move(_direction, 5f);
+            }
         }
 
         private void OnDisable()
@@ -187,6 +177,53 @@ namespace Backend.Object.Character
             _animation.Play(_state | PlayerCharacterAnimationState.Jump);
             
             _controller.Move(forward, 2.5f, _count);
+        }
+
+        private void Detect()
+        {
+            var position = new Vector2(transform.position.x, transform.position.y);
+            var direction = new Vector2(forward.x, forward.y);
+            var length = Physics2D.RaycastNonAlloc(position, direction, _hits, 2f, mask);
+
+            switch (length)
+            {
+                case 0:
+                    isMoveable = true;
+                    isJumpable = true;
+                    isPushable = false;
+                    _count = 2;
+                    break;
+                case 1 when _hits[0].distance < 1f:
+                    var layer = _hits[0].collider.gameObject.layer;
+                    isMoveable = false;
+                    isJumpable = true;
+                    isPushable = layer == Layer.Pushable;
+                    _count = 2;
+                    break;
+                case 1 when _hits[0].distance > 1f:
+                    isMoveable = true;
+                    isJumpable = true;
+                    isPushable = false;
+                    _count = 1;
+                    break;
+                case 2:
+                    isMoveable = false;
+                    isJumpable = false;
+                    isPushable = false;
+                    break;
+
+            }
+
+#if UNITY_EDITOR
+
+            Debug.DrawLine(transform.position, transform.position + forward * 2f, Color.red);
+
+            if (length > 0)
+            {
+                Debug.DrawLine(transform.position, _hits[0].point, Color.green);
+            }
+
+#endif
         }
 
         private bool IsPressed()

@@ -1,33 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Backend.Object;
+using Backend.Object.Character;
 
 public class Chair : MonoBehaviour
 {
-    private Vector2 initiolPosition;
-    private Rigidbody2D rb;
-
+    private ObjectMovementController _controller;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _controller = GetComponent<ObjectMovementController>();
     }
-
-    private void Start()
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        initiolPosition = transform.position;
-    }
-    public void ResetState()
-    {
-        rb.velocity = Vector2.zero;
-        rb.angularVelocity = 0f;
-        transform.position = initiolPosition;
-    }
+        Debug.Log("Collision");
 
-
-
-    public void SetInitialPosition(Vector2 pos)
-    {
-        initiolPosition = pos;
+        if (other.TryGetComponent<PlayerCharacterMovementController>(out var component))
+        {
+            _controller.Move(component.Forward, 5f);
+        }
     }
 }

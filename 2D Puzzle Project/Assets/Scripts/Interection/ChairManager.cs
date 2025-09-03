@@ -31,7 +31,6 @@ public class ChairManager : MonoBehaviour
         for(int i =0; i < chairs.Length; i++)
         {
             chairs[i].transform.position = initialPositions[i];
-            chairs[i].ResetState();
         }
     }
 
