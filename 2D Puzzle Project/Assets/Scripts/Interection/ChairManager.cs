@@ -26,13 +26,13 @@ public class ChairManager : MonoBehaviour
         }
         return true;
     }
-    public void ResetChairs()
-    {
-        for(int i =0; i < chairs.Length; i++)
-        {
-            chairs[i].transform.position = initialPositions[i];
-        }
-    }
+    //public void ResetChairs()
+    //{
+    //    for(int i =0; i < chairs.Length; i++)
+    //    {
+    //        chairs[i].transform.position = initialPositions[i];
+    //    }
+    //}
 
     
     void Update()

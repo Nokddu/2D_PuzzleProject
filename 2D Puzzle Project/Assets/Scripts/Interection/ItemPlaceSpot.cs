@@ -41,6 +41,7 @@ public class ItemPlaceSpot : MonoBehaviour
         placedItem = item;
         item.transform.position = transform.position;
         item.gameObject.SetActive(true);
+        Debug.Log(placedItem);
     }
 
     public Item GetItem()
