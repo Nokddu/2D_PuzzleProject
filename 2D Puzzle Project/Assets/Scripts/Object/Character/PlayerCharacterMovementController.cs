@@ -169,7 +169,7 @@ namespace Backend.Object.Character
 
         private void Jump(InputAction.CallbackContext context)
         {
-            if (isJumpable == false)
+            if (isJumpable == false || isMoving)
             {
                 return;
             }
