@@ -35,6 +35,7 @@ namespace Backend.Object
         {
             var distance = direction.ToInt() * length;
 
+            StopAllCoroutines();
             StartCoroutine(Moving(distance, scale));
         }
 
@@ -59,6 +60,9 @@ namespace Backend.Object
             _position = position;
 
             _collider.enabled = true;
+
+            yield return new WaitForSeconds(0.02f);
+
             isMoving = false;
         }
 
