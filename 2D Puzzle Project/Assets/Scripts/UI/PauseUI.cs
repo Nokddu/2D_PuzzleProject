@@ -25,6 +25,7 @@ public class PauseUI : MonoBehaviour
         }
         else if(isPause)
         {
+            Debug.Log("3¹ø¾À Ã¼Å©");
             toggleImg.sprite = pauseSprite;
             GameManager.Ins.PauseGame();
             pauseText.SetActive(true);

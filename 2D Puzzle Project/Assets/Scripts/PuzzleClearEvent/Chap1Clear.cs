@@ -9,7 +9,7 @@ public class Chap1Clear : BaseChapClear
     [SerializeField] private Door leftDoor;
     [SerializeField] private Door rightDoor;
 
-    private Item lastCheckItem = null;
+    private ItemType lastCheckItem = ItemType.None;
     private void Start()
     {
         if(secretDoor != null)
@@ -37,16 +37,16 @@ public class Chap1Clear : BaseChapClear
         }        
     }
 
-    private void TryOpenDoorWithItem(Item item)
+    private void TryOpenDoorWithItem(ItemType itemtype)
     {
-        if (item == null)
+        if (itemtype == ItemType.None)
         {
             leftDoor.CloseDoor();
             rightDoor.CloseDoor();
             return;
         }
 
-        switch(item.GetItemType())
+        switch(itemtype)
         {
             case ItemType.Duck:
                 leftDoor.OpenDoor();

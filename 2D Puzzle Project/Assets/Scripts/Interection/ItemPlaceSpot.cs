@@ -5,7 +5,7 @@ using UnityEngine;
 public class ItemPlaceSpot : MonoBehaviour
 {
     private Chair placedChair;
-    public Item placedItem;
+    public ItemType placedItem;
     public bool HasItem => placedItem != null;
     public bool IsPlaced => placedChair != null;
 
@@ -28,20 +28,9 @@ public class ItemPlaceSpot : MonoBehaviour
         }
     }
 
-    //public void PlaceItem(Item item)
-    //{
-    //    placedItem = item;
-    //    item.transform.position = transform.position;
-    //    item.gameObject.SetActive(true);
-    //    Debug.Log(placedItem);
-    //}
-
-    public Item GetItem()
+    public void PlaceItem(ItemType itemtype)
     {
-        if (placedItem == null) return null;
-        Debug.Log("¾È³ç");
-        Item temp = placedItem;
-        placedItem = null;
-        return temp;
+        placedItem = itemtype;
+        Debug.Log(placedItem);
     }
 }

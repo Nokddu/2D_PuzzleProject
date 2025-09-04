@@ -113,7 +113,7 @@ public class PlayerGetInteract : MonoBehaviour
         var place = placementObject.gameObject.GetComponent<ItemPlaceSpot>();
         var item = _items.Dequeue();
         Instantiate(GameManager.Ins.GetItemByType(item)).transform.position = position;
-        //place.PlaceItem(item);
+        place.PlaceItem(item);
 
         if (_items.Count == 0)
         {

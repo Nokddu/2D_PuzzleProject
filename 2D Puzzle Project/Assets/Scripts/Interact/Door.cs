@@ -50,6 +50,7 @@ public class Door : MonoBehaviour
     public void CloseDoor()
     {
         SoundManager.Ins.PlaySound("EventOn");
+
         spriteRenderer.sprite = closeDoor;
 
         if (scenePortal != null)

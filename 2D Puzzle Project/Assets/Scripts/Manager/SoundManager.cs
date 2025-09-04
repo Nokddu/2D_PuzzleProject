@@ -24,6 +24,8 @@ public class SoundManager : SingletonGameObject<SoundManager>
         base.Awake();
         DontDestroyOnLoad(gameObject);
         soundDic = new Dictionary<string, AudioClip>();
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
         foreach (var sound in sounds)
         {
             if (!soundDic.ContainsKey(sound.key))
@@ -38,6 +40,7 @@ public class SoundManager : SingletonGameObject<SoundManager>
         { 
             audioSource.PlayOneShot(soundDic[key]);
         }
+
         else
             Debug.Log("사운드가 비어있어");
     }
