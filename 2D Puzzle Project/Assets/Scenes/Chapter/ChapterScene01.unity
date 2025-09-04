@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7819499390634858301, guid: 9990c280f26cd784b9b059743f70f62b, type: 3}
       propertyPath: itemtype
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8542544125617426572, guid: 9990c280f26cd784b9b059743f70f62b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4735,6 +4735,7 @@ MonoBehaviour:
   redBallIcon: {fileID: 2103012044}
   openbookIcon: {fileID: 1457337705}
   ZIcon: {fileID: 609258639}
+  items: []
 --- !u!114 &1170162076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4863,7 +4864,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170162074}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6550,8 +6551,8 @@ MonoBehaviour:
   openDoor: {fileID: 561746739, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   closeDoor: {fileID: 162073214, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   scenePortal: {fileID: 1509865377}
-  isStartDoor: 0
   doorLight: {fileID: 0}
+  doorType: 0
 --- !u!114 &2623663295880989911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6567,8 +6568,8 @@ MonoBehaviour:
   openDoor: {fileID: 561746739, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   closeDoor: {fileID: 162073214, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   scenePortal: {fileID: 1558718968}
-  isStartDoor: 0
   doorLight: {fileID: 0}
+  doorType: 0
 --- !u!1 &5463245854042646713
 GameObject:
   m_ObjectHideFlags: 0

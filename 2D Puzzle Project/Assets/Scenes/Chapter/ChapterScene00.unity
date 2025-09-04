@@ -560,7 +560,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPersistent: 1
-  GameCleared: 0000
+  items:
+  - {fileID: 7807683977383000357, guid: 7ce24fd26f353c0498c61b4930602c27, type: 3}
+  - {fileID: 7869493765485623558, guid: b45e8da244d49454dae1ab2f48dbe44f, type: 3}
+  - {fileID: 228098711441272149, guid: 9990c280f26cd784b9b059743f70f62b, type: 3}
+  - {fileID: 228098711441272149, guid: 896f2c2c519fb4b4c9bea4705cb2ee70, type: 3}
   hp: 2
 --- !u!4 &498439576
 Transform:

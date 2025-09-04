@@ -28,13 +28,13 @@ public class ItemPlaceSpot : MonoBehaviour
         }
     }
 
-    public void PlaceItem(Item item)
-    {
-        placedItem = item;
-        item.transform.position = transform.position;
-        item.gameObject.SetActive(true);
-        Debug.Log(placedItem);
-    }
+    //public void PlaceItem(Item item)
+    //{
+    //    placedItem = item;
+    //    item.transform.position = transform.position;
+    //    item.gameObject.SetActive(true);
+    //    Debug.Log(placedItem);
+    //}
 
     public Item GetItem()
     {

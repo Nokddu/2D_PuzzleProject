@@ -6,20 +6,22 @@ using UnityEngine;
 using System;
 
 public class DataManager : Singleton<DataManager>
-{
+{ 
+    public static SaveData SaveData { get; set; }
+
     private DataManager()
     {
-
+        
     }
 
-
-
-    private void SaveGameData_Internal(SaveData saveData)
+    private void SaveGameData_Internal()
     {
 
-        saveData.hp = GameManager.Ins.HP; // 나중에 플레이어 체력이랑 연결할것.
+        SaveData.hp = GameManager.Ins.HP; // 나중에 플레이어 체력이랑 연결할것.
 
-        string json = JsonUtility.ToJson(saveData,true);
+        SaveData.type = GameManager.ItemType;
+
+        string json = JsonUtility.ToJson(SaveData,true);
 
         string path = Path.Combine(Application.persistentDataPath, "SaveData.json");
 
@@ -28,29 +30,27 @@ public class DataManager : Singleton<DataManager>
         Debug.Log(path);
     }
 
-    private SaveData LoadGameData_Internal()
+    private void LoadGameData_Internal()
     {
         string path = Path.Combine(Application.persistentDataPath, "SaveData.json");
 
         if (!File.Exists(path))
         {
             Debug.Log($"세이브 파일이 없습니다.{path}에 세이브 파일 생성");
-            return null;
         }
 
         string json = File.ReadAllText(path);
 
-        SaveData loadedData = JsonUtility.FromJson<SaveData>(json);
+        SaveData = JsonUtility.FromJson<SaveData>(json);
 
-        Debug.Log($"세이브 파일을 불러왔습니다{loadedData}");
-        return loadedData;
+        Debug.Log($"세이브 파일을 불러왔습니다{SaveData}");
     }
 
     private void ResetData_Internal()
     {
-        SaveData newData = new SaveData();
+        SaveData = new SaveData();
 
-        SaveGameData_Internal(newData);
+        SaveGameData_Internal();
     }
 
     public static void ResetData()
@@ -58,13 +58,13 @@ public class DataManager : Singleton<DataManager>
         Instance.ResetData_Internal();
     }
 
-    public static void SaveGameData(SaveData saveData)
+    public static void SaveGameData()
     {
-        Instance.SaveGameData_Internal(saveData);
+        Instance.SaveGameData_Internal();
     }
 
-    public static SaveData LoadGameData()
+    public static void LoadGameData()
     {
-        return Instance.LoadGameData_Internal();
+        Instance.LoadGameData_Internal();
     }
 }

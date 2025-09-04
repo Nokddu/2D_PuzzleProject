@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8184216287598991783}
   - component: {fileID: 7949650155396708240}
   - component: {fileID: 5882444480720133988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DuckItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7869493765485623558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.87, y: 2.9, z: 0}
+  m_LocalPosition: {x: 1.28, y: -3.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []

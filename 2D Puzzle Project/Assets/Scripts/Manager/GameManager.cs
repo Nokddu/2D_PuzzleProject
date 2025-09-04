@@ -8,16 +8,18 @@ using Utils.Management;
 public class GameManager : SingletonGameObject<GameManager>
 {
     public static GameManager Ins => Instance;
-    public List<bool> GameCleared = new List<bool>();
+    public List<bool> GameCleared { get => DataManager.SaveData.isClear; set => DataManager.SaveData.isClear = value; }
+
+    [SerializeField] private List<Item> items = new();
 
     [SerializeField] private int hp;
     public int HP
     {
-        get => hp;
+        get => DataManager.SaveData.hp;
         set
         {
-            hp = Mathf.Clamp(value, 0, 3);
-            OnHpChanged?.Invoke(hp);
+            DataManager.SaveData.hp = Mathf.Clamp(value, 0, 3);
+            OnHpChanged?.Invoke(DataManager.SaveData.hp);
         }
     }
 
@@ -26,15 +28,8 @@ public class GameManager : SingletonGameObject<GameManager>
     protected override void Awake()
     {
         base.Awake();
-        SaveData save = DataManager.LoadGameData();
-
-        if (save != null)
-        {
-            GameCleared = new List<bool>(save.isClear);
-            hp = save.hp;
-        }
+        DataManager.LoadGameData();
     }
-
 
     /// <summary>
     /// 퍼즐 방 하나 클리어 하면 인덱스 Ex) 0 ,1 넣기
@@ -43,9 +38,8 @@ public class GameManager : SingletonGameObject<GameManager>
     public void PuzzleClear(int GameIndex)
     {
         GameCleared[GameIndex] = true;
-        SaveData saveData = new SaveData();
-        saveData.isClear = GameCleared;
-        DataManager.SaveGameData(saveData);
+        DataManager.SaveData.isClear = GameCleared;
+        DataManager.SaveGameData();
     }
 
     /// <summary>
@@ -92,16 +86,30 @@ public class GameManager : SingletonGameObject<GameManager>
         DataManager.ResetData();
         ExitGame();
     }
-
-    private void Update() //테스트용
+    public Item GetItemByType(ItemType itemType)
     {
-        if(Input.GetKeyDown(KeyCode.Keypad1))
+        Item item = null;
+
+        switch(itemType)
         {
-            HP--;
+            case ItemType.None:
+                break;
+            case ItemType.Book:
+                item = items[0];
+                break;
+            case ItemType.Duck:
+                item = items[1];
+                break;
+            case ItemType.OpenBook:
+                item = items[2];
+                break;
+            case ItemType.RedBall:
+                item = items[3];
+                break;             
         }
-        if(Input.GetKeyDown(KeyCode.Keypad2))
-        {
-            HP++;
-        }
+        return item;
     }
+    public static ItemType ItemType { get => DataManager.SaveData.type; set => DataManager.SaveData.type = value; }
+
+
 }

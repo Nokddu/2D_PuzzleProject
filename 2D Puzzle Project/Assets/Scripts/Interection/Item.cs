@@ -14,14 +14,12 @@ public class Item : MonoBehaviour
     //플레이어가 아이템을 집을 때 호추우울
     public void OnPick()
     {
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
     //플레이어가 내려놓을 때애애
     public void OnPlace(Vector3 pos)
     {
-        transform.position = pos;
-        gameObject.SetActive(true);
-
+        Instantiate(gameObject).transform.position = pos;
     }
     public void ResetPosition()
     {

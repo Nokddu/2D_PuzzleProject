@@ -12,7 +12,9 @@ public class PlayerGetInteract : MonoBehaviour
     [SerializeField] private LayerMask mask01;
     [SerializeField] private LayerMask mask02;
 
-    private Queue<Item> _items;
+    [SerializeField] private int count;
+
+    private Queue<ItemType> _items;
     private Collider2D[] _hits01;
     private Collider2D[] _hits02;
 
@@ -22,18 +24,27 @@ public class PlayerGetInteract : MonoBehaviour
     {
         _controller = GetComponent<PlayerCharacterMovementController>();
 
-        _items = new Queue<Item>();
+        _items = new Queue<ItemType>();
         _hits01 = new Collider2D[1];
         _hits02 = new Collider2D[1];
     }
 
     private void Start()
     {
-        iconManager.UpdateIcon(ItemType.None);
+        DataManager.LoadGameData();
+        var type = DataManager.SaveData.type;
+        iconManager.UpdateIcon(DataManager.SaveData.type);
+
+        if(type != ItemType.None)
+        {
+            _items.Enqueue(DataManager.SaveData.type);
+        }     
     }
 
     private void Update()
     {
+        count = _items.Count;
+
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Interact();
@@ -80,16 +91,19 @@ public class PlayerGetInteract : MonoBehaviour
                 }
                 break;
         }
+        DataManager.SaveData.type = iconManager.ItemType;
+        DataManager.SaveGameData();
     }
 
     private void Pick(GameObject itemObject)
     {
         var item = itemObject.GetComponent<Item>();
 
-        _items.Enqueue(item);
+        _items.Enqueue(item.GetItemType()); 
 
-        item.OnPick();
+        //item.OnPick();
         iconManager.UpdateIcon(item.GetItemType());
+        Destroy(itemObject);
     }
 
     private void Drop(GameObject placementObject)
@@ -98,8 +112,8 @@ public class PlayerGetInteract : MonoBehaviour
         var position = placementObject.transform.position;
         var place = placementObject.gameObject.GetComponent<ItemPlaceSpot>();
         var item = _items.Dequeue();
-        item.OnPlace(position);
-        place.PlaceItem(item);
+        Instantiate(GameManager.Ins.GetItemByType(item)).transform.position = position;
+        //place.PlaceItem(item);
 
         if (_items.Count == 0)
         {

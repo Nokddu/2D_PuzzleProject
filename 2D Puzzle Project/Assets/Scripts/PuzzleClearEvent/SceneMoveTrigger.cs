@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(BoxCollider2D))]
 public class SceneMoveTrigger : MonoBehaviour
 {
-    [SerializeField] private int sceneNum;
+    [SerializeField] private int sceneNum; 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -15,6 +15,7 @@ public class SceneMoveTrigger : MonoBehaviour
 
         if (sceneNum >= 0 && sceneNum < SceneManager.sceneCountInBuildSettings)
         {
+            DataManager.SaveGameData();
             SceneManager.LoadScene(sceneNum);
         }
         else

@@ -8,9 +8,11 @@ public class PlayerItemIcon : MonoBehaviour
     [SerializeField] private GameObject bookIcon;   
     [SerializeField] private GameObject redBallIcon;
     [SerializeField] private GameObject openbookIcon;
-
+    
     [Header("Z키")]
     [SerializeField] private GameObject ZIcon;
+
+    [SerializeField] private List<GameObject> items = new();
 
     private void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerItemIcon : MonoBehaviour
     }
     public void UpdateIcon(ItemType type)
     {
+        ItemType = type;
         //해당 아이콘 키깃
         switch (type)
         {
@@ -75,4 +78,6 @@ public class PlayerItemIcon : MonoBehaviour
             ShowZIcon(false);
         }
     }
+
+    public ItemType ItemType { get; set; }
 }

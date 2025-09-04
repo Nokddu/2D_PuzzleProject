@@ -5,53 +5,84 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+public enum DoorType
+{
+    Normal,
+    NextStage,
+    ExitGame
+}
 public class Door : MonoBehaviour
 {
     [SerializeField] private Sprite openDoor;
     [SerializeField] private Sprite closeDoor;
     [SerializeField] private SceneMoveTrigger scenePortal;
     private SpriteRenderer spriteRenderer;
-    [SerializeField] private bool isStartDoor;
     [SerializeField] private SpriteRenderer doorLight;
+    [SerializeField] private DoorType doorType;
 
     private void Awake()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        CloseDoor();
-        
+        CloseDoor();   
     }
 
     public void OpenDoor()
     {
         SoundManager.Ins.PlaySound("EventOn");
-        if(isStartDoor)
-        {
-            doorLight.color = Color.green;
-        }
         spriteRenderer.sprite = openDoor;
 
-        if (scenePortal != null)
+        switch(doorType)
         {
-            var col = scenePortal.GetComponent<BoxCollider2D>();
-            if (col != null)
-                col.enabled = true;  
+            case DoorType.Normal:
+                EnablePortal(true);
+                break;
+            case DoorType.NextStage:
+                doorLight.color = Color.green;
+                EnablePortal(true);
+                break;
+            case DoorType.ExitGame:
+                doorLight.color = Color.red;
+                EnablePortal(true);
+                break;
         }
     }
 
     public void CloseDoor()
     {
         SoundManager.Ins.PlaySound("EventOn");
-        if(isStartDoor)
-        {
-            doorLight.color = Color.red;
-        }
         spriteRenderer.sprite = closeDoor;
 
         if (scenePortal != null)
         {
+            EnablePortal(false);
+        }
+    }
+
+    private void EnablePortal(bool isEnable)
+    {
+        if(scenePortal != null)
+        {
             var col = scenePortal.GetComponent<BoxCollider2D>();
             if (col != null)
-                col.enabled = false;
+                col.enabled = isEnable;
         }
-    } 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(spriteRenderer.sprite == openDoor)
+        {
+            if(doorType == DoorType.ExitGame)
+            {
+#if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+#else
+                Application.Quit();
+#endif
+            }
+
+        }
+    }
 }
+
+
