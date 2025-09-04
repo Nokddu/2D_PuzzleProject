@@ -34,6 +34,7 @@ public class CheckPuzzle : MonoBehaviour
             Debug.Log("조건 달성");
             BaseChapClear.ClearEvent(); 
             isClear = true;
+            GameManager.Ins.PuzzleClear(1);
         }
     }
 }

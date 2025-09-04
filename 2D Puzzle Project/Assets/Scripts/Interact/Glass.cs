@@ -12,6 +12,10 @@ public class Glass : MonoBehaviour
             controller.Move(-component.Forward, 5f);
 
             GameManager.Ins.HP--;
+            if (GameManager.Ins.HP <= 0)
+            {
+                GameManager.Ins.GameOver();
+            }
         }
     }
 }

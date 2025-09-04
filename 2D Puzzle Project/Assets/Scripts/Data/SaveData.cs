@@ -10,6 +10,7 @@ public class SaveData
 
     public SaveData()
     {
-        isClear = new List<bool>();
+        isClear = new List<bool>() { false, false };
+        hp = 3;
     }
 }

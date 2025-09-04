@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.IO;
 using Utils.Management;
 using UnityEngine;
+using System;
 
 public class DataManager : Singleton<DataManager>
 {
-    public static DataManager Ins => Instance;
-
     private DataManager()
     {
-       
+
     }
 
-    public void SaveGameData(SaveData saveData)
+
+
+    private void SaveGameData_Internal(SaveData saveData)
     {
 
         saveData.hp = GameManager.Ins.HP; // 나중에 플레이어 체력이랑 연결할것.
@@ -27,7 +28,7 @@ public class DataManager : Singleton<DataManager>
         Debug.Log(path);
     }
 
-    public SaveData LoadGameData()
+    private SaveData LoadGameData_Internal()
     {
         string path = Path.Combine(Application.persistentDataPath, "SaveData.json");
 
@@ -43,5 +44,27 @@ public class DataManager : Singleton<DataManager>
 
         Debug.Log($"세이브 파일을 불러왔습니다{loadedData}");
         return loadedData;
+    }
+
+    private void ResetData_Internal()
+    {
+        SaveData newData = new SaveData();
+
+        SaveGameData_Internal(newData);
+    }
+
+    public static void ResetData()
+    {
+        Instance.ResetData_Internal();
+    }
+
+    public static void SaveGameData(SaveData saveData)
+    {
+        Instance.SaveGameData_Internal(saveData);
+    }
+
+    public static SaveData LoadGameData()
+    {
+        return Instance.LoadGameData_Internal();
     }
 }
