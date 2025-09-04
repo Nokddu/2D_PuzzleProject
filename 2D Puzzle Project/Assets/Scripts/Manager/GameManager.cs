@@ -10,7 +10,7 @@ public class GameManager : SingletonGameObject<GameManager>
     public static GameManager Ins => Instance;
     public List<bool> GameCleared = new List<bool>();
 
-    [SerializeField] private int hp = 3;
+    [SerializeField] private int hp;
     public int HP
     {
         get => hp;
@@ -26,11 +26,12 @@ public class GameManager : SingletonGameObject<GameManager>
     protected override void Awake()
     {
         base.Awake();
-        SaveData save = DataManager.Ins.LoadGameData();
+        SaveData save = DataManager.LoadGameData();
 
         if (save != null)
         {
             GameCleared = new List<bool>(save.isClear);
+            hp = save.hp;
         }
     }
 
@@ -44,7 +45,7 @@ public class GameManager : SingletonGameObject<GameManager>
         GameCleared[GameIndex] = true;
         SaveData saveData = new SaveData();
         saveData.isClear = GameCleared;
-        DataManager.Ins.SaveGameData(saveData);
+        DataManager.SaveGameData(saveData);
     }
 
     /// <summary>
@@ -83,6 +84,13 @@ public class GameManager : SingletonGameObject<GameManager>
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void GameOver()
+    {
+        hp = 3;
+        DataManager.ResetData();
+        ExitGame();
     }
 
     private void Update() //테스트용

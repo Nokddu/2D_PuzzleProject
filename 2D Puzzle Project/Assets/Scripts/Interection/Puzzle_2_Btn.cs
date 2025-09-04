@@ -34,7 +34,6 @@ public class Puzzle_2_Btn : Button
             
         }
     }
-
     IEnumerator showImage()
     {
         wall.SetActive(false);

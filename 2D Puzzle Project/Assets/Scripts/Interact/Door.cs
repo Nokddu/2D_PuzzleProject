@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,53 +9,46 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Sprite openDoor;
     [SerializeField] private Sprite closeDoor;
-    [SerializeField] private SpriteRenderer doorLight;
-    [SerializeField] private Foothold[] foothold;
-    [SerializeField] private BoxCollider2D col;
-
+    [SerializeField] private SceneMoveTrigger scenePortal;
     private SpriteRenderer spriteRenderer;
-
-    public bool isStart;
+    [SerializeField] private bool isStartDoor;
+    [SerializeField] private SpriteRenderer doorLight;
 
     private void Awake()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-        spriteRenderer.sprite = closeDoor;
+        CloseDoor();
     }
 
-    private void Start()
+    public void OpenDoor()
     {
-        if(foothold != null)
+        if(isStartDoor)
         {
-            foothold[0].OnSwitchChanged += CheckFootholdChanged;
-            foothold[1].OnSwitchChanged += CheckFootholdChanged;
+            doorLight.color = Color.green;
         }
-    }
+        spriteRenderer.sprite = openDoor;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (isStart)
+        if (scenePortal != null)
         {
-            SceneManager.LoadScene(2);
-        }
-        else
-        {
-            GameManager.Ins.ExitGame();
+            var col = scenePortal.GetComponent<BoxCollider2D>();
+            if (col != null)
+                col.enabled = true;  
         }
     }
 
-    private void CheckFootholdChanged(bool isOn, bool isMain)
+    public void CloseDoor()
     {
-        spriteRenderer.sprite = isOn ? openDoor : closeDoor;
-        col.enabled = isOn;
-        isStart = isMain;
-        if (isMain)
-        {
-            doorLight.color = Color.white;
-        }
-        else
+        if(isStartDoor)
         {
             doorLight.color = Color.red;
         }
-    }
+        spriteRenderer.sprite = closeDoor;
+
+        if (scenePortal != null)
+        {
+            var col = scenePortal.GetComponent<BoxCollider2D>();
+            if (col != null)
+                col.enabled = false;
+        }
+    } 
 }
