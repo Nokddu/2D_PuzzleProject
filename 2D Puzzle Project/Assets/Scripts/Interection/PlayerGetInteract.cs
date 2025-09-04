@@ -98,10 +98,15 @@ public class PlayerGetInteract : MonoBehaviour
     private void Pick(GameObject itemObject)
     {
         var item = itemObject.GetComponent<Item>();
+        var place = itemObject.GetComponentInParent<ItemPlaceSpot>();
 
-        _items.Enqueue(item.GetItemType()); 
+        _items.Enqueue(item.GetItemType());
 
         //item.OnPick();
+        if(place != null)
+        {
+            place.RemoveItem();
+        }
         iconManager.UpdateIcon(item.GetItemType());
         Destroy(itemObject);
     }
@@ -112,7 +117,7 @@ public class PlayerGetInteract : MonoBehaviour
         var position = placementObject.transform.position;
         var place = placementObject.gameObject.GetComponent<ItemPlaceSpot>();
         var item = _items.Dequeue();
-        Instantiate(GameManager.Ins.GetItemByType(item)).transform.position = position;
+        Instantiate(GameManager.Ins.GetItemByType(item), place.transform);
         place.PlaceItem(item);
 
         if (_items.Count == 0)

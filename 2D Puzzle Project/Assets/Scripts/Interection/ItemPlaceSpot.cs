@@ -33,4 +33,9 @@ public class ItemPlaceSpot : MonoBehaviour
         placedItem = itemtype;
         Debug.Log(placedItem);
     }
+
+    public void RemoveItem()
+    {
+        placedItem = ItemType.None;
+    }
 }
