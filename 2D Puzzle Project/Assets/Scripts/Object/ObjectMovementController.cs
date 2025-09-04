@@ -52,7 +52,7 @@ namespace Backend.Object
             for (var time = 0f; time < 1f; time += Time.deltaTime * scale)
             {
                 transform.position = Vector3.Lerp(start, end, time);
-
+                if(time < 0.005f)SoundManager.Ins.PlaySound("Walk");
                 yield return null;
             }
 

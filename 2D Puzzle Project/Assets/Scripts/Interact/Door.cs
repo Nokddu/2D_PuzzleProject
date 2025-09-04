@@ -22,6 +22,7 @@ public class Door : MonoBehaviour
 
     public void OpenDoor()
     {
+        SoundManager.Ins.PlaySound("EventOn");
         if(isStartDoor)
         {
             doorLight.color = Color.green;
@@ -38,6 +39,7 @@ public class Door : MonoBehaviour
 
     public void CloseDoor()
     {
+        SoundManager.Ins.PlaySound("EventOn");
         if(isStartDoor)
         {
             doorLight.color = Color.red;

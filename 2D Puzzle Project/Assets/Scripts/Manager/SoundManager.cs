@@ -12,8 +12,8 @@ public class SoundData
 
 public class SoundManager : SingletonGameObject<SoundManager>
 {
-
-    [SerializeField] private AudioSource audioSource = null;
+    public static SoundManager Ins => Instance;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private List<SoundData> sounds = new List<SoundData>();
 
     private Dictionary<string, AudioClip> soundDic;
@@ -32,8 +32,12 @@ public class SoundManager : SingletonGameObject<SoundManager>
 
     public void PlaySound(string key)
     {
+        Debug.Log($"{key}");
+        Debug.Log($"{soundDic[key]}"); 
         if (soundDic.ContainsKey(key))
+        { 
             audioSource.PlayOneShot(soundDic[key]);
+        }
         else
             Debug.Log("사운드가 ");
     }

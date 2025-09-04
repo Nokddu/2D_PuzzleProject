@@ -77,6 +77,7 @@ namespace Backend.Object.Character
             if (isPressed)
             {
                 _animation.Play(_state | PlayerCharacterAnimationState.Walk, true);
+                
             }
             else if (_controller.IsMoving == false)
             {
@@ -175,7 +176,8 @@ namespace Backend.Object.Character
             }
             
             _animation.Play(_state | PlayerCharacterAnimationState.Jump);
-            
+
+            SoundManager.Ins.PlaySound("Jump");
             _controller.Move(forward, 2.5f, _count);
         }
 

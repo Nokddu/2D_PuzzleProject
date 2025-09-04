@@ -76,5 +76,6 @@ namespace Backend.Object.Character
 
             _animation.Play(data, isLooping);
         }
+
     }
 }
