@@ -40,10 +40,10 @@ public class Door : MonoBehaviour
 
     public void CloseDoor()
     {
-        SoundManager.Ins.PlaySound("EventOn");
         if(isStartDoor)
         {
             doorLight.color = Color.red;
+            
         }
         spriteRenderer.sprite = closeDoor;
 
