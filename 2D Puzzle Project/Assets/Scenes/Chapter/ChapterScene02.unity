@@ -5932,39 +5932,14 @@ PrefabInstance:
       propertyPath: failedImg
       value: 
       objectReference: {fileID: 2138891854}
-    m_RemovedComponents:
-    - {fileID: 8240538165097659007, guid: 58b6b67d901841443a890428ce8f785b, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5975408912176898696, guid: 58b6b67d901841443a890428ce8f785b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 996230917}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5849669174169845069, guid: 58b6b67d901841443a890428ce8f785b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2000304801}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58b6b67d901841443a890428ce8f785b, type: 3}
---- !u!1 &2000304800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5849669174169845069, guid: 58b6b67d901841443a890428ce8f785b, type: 3}
-  m_PrefabInstance: {fileID: 2000304799}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2000304801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2000304800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7219f5cf1e8d9514e9c7c34073b7c5b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonCheckRadius: 3
-  chair: {fileID: 499441766}
-  wall: {fileID: 1614769328}
-  failedImg: {fileID: 2138891854}
 --- !u!1 &2039590498
 GameObject:
   m_ObjectHideFlags: 0
