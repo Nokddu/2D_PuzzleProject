@@ -1,7 +1,8 @@
-using System.Collections.Generic;
-using UnityEngine;
 using Backend.Object.Character;
 using Backend.Util.Extension;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class PlayerGetInteract : MonoBehaviour
 {
@@ -50,27 +51,27 @@ public class PlayerGetInteract : MonoBehaviour
         var position = transform.position;
         var direction = _controller.Forward;
         var size = new Vector2(1f, 1f);
-        var a = Physics2D.OverlapCircleNonAlloc(position, 0.8f, _hits01, mask01);
-        var b = Physics2D.OverlapCircleNonAlloc(position, 0.8f, _hits02, mask02);
-        var length = a + b;
-        Debug.Log($"{a}. {b}");
+        var a = Physics2D.Raycast(position, direction, 1f, mask01);
+        var b = Physics2D.Raycast(position, direction, 1f, mask02);
+        var length = (a ? 1 : 0) + (b ? 1 : 0);
+        Debug.Log($"{(a ? 1 : 0)}. {(b ? 1:0)}");
         switch (length)
         {
             case 1:
-                if (a == 1)
+                if (a && _items.Count == 0)
                 {
-                    Pick(_hits01[0].gameObject);
+                    Pick(a.collider.gameObject);
                     
                 }
-                else
+                else if(b && _items.Count == 1)
                 {
-                    Debug.Log("여기는 넘어가니");
-                    Drop(_hits02[0].gameObject);
+                    
+                    Drop(b.collider.gameObject);
                 }
                 break;
             case 2:
-                Pick(_hits01[0].gameObject);
-                Drop(_hits02[0].gameObject);
+                Pick(a.collider.gameObject);
+                Drop(b.collider.gameObject);
                 break;
         }
     }

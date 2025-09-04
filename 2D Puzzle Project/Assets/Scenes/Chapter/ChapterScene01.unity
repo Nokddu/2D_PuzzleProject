@@ -135,6 +135,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: OpenBookItem
       objectReference: {fileID: 0}
+    - target: {fileID: 228098711441272149, guid: 9990c280f26cd784b9b059743f70f62b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7819499390634858301, guid: 9990c280f26cd784b9b059743f70f62b, type: 3}
+      propertyPath: itemtype
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8542544125617426572, guid: 9990c280f26cd784b9b059743f70f62b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.85
@@ -415,6 +423,10 @@ PrefabInstance:
     - target: {fileID: 228098711441272149, guid: 896f2c2c519fb4b4c9bea4705cb2ee70, type: 3}
       propertyPath: m_Name
       value: RedBallItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 228098711441272149, guid: 896f2c2c519fb4b4c9bea4705cb2ee70, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8542544125617426572, guid: 896f2c2c519fb4b4c9bea4705cb2ee70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1993,6 +2005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Table (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3314899689151896432, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5134911418263659833, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2047,6 +2063,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6599420047628078467, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719167767137451098, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719167767137451098, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.6938324
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719167767137451098, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0437088
+      objectReference: {fileID: 0}
+    - target: {fileID: 7719167767137451098, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7719167767137451098, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
@@ -6299,9 +6331,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5882444480720133988, guid: b45e8da244d49454dae1ab2f48dbe44f, type: 3}
+      propertyPath: itemtype
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7869493765485623558, guid: b45e8da244d49454dae1ab2f48dbe44f, type: 3}
       propertyPath: m_Name
       value: DuckItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 7869493765485623558, guid: b45e8da244d49454dae1ab2f48dbe44f, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
