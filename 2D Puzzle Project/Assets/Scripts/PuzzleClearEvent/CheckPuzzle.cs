@@ -6,8 +6,6 @@ public class CheckPuzzle : MonoBehaviour
 {
     [SerializeField] private ChairManager chairManager;
     [SerializeField] private ItemPlaceSpot itemPlace;
-    [SerializeField] private Foothold foothold;
-
     [SerializeField] private BaseChapClear BaseChapClear;
 
     public bool isClear = false;
@@ -22,7 +20,7 @@ public class CheckPuzzle : MonoBehaviour
     }
     private void CheckClearCondition()
     {
-        if(chairManager == null &&  itemPlace == null && foothold == null)
+        if(chairManager == null &&  itemPlace == null)
         {
             Debug.LogError("아무런 조건이 없습니다.");
             return;
@@ -30,12 +28,11 @@ public class CheckPuzzle : MonoBehaviour
 
         bool chairclear = (chairManager == null || chairManager.CheckChairs());
         bool itemClear = (itemPlace == null || itemPlace.HasItem);
-        bool footholdClear = (foothold == null || foothold.IsOn);
 
-        if(chairclear && itemClear && footholdClear)
+        if(chairclear && itemClear)
         {
             Debug.Log("조건 달성");
-            BaseChapClear.ClearEvent();
+            BaseChapClear.ClearEvent(); 
             isClear = true;
         }
     }

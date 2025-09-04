@@ -5,19 +5,11 @@ using UnityEngine;
 public class ItemPlaceSpot : MonoBehaviour
 {
     private Chair placedChair;
-    private Item placedItem;
+    public Item placedItem;
     public bool HasItem => placedItem != null;
     public bool IsPlaced => placedChair != null;
 
     [SerializeField] private Transform placePoint;
-
-    [SerializeField] private bool hasItemDebug; //체크용 추후삭제
-
-    private void Update()
-    {
-        hasItemDebug = HasItem;
-    }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
