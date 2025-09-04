@@ -61,17 +61,23 @@ public class PlayerGetInteract : MonoBehaviour
                 if (a && _items.Count == 0)
                 {
                     Pick(a.collider.gameObject);
-                    
                 }
                 else if(b && _items.Count == 1)
                 {
-                    
                     Drop(b.collider.gameObject);
                 }
                 break;
             case 2:
-                Pick(a.collider.gameObject);
-                Drop(b.collider.gameObject);
+                if (_items.Count == 1)
+                {
+                    Drop(b.collider.gameObject);
+                    Pick(a.collider.gameObject);
+                }
+                else if (_items.Count == 0)
+                {
+                    Pick(a.collider.gameObject);
+                    
+                }
                 break;
         }
     }
@@ -79,7 +85,7 @@ public class PlayerGetInteract : MonoBehaviour
     private void Pick(GameObject itemObject)
     {
         var item = itemObject.GetComponent<Item>();
-        
+
         _items.Enqueue(item);
 
         item.OnPick();
@@ -90,9 +96,10 @@ public class PlayerGetInteract : MonoBehaviour
     {
         Debug.Log("넘어가니");
         var position = placementObject.transform.position;
-        
+        var place = placementObject.gameObject.GetComponent<ItemPlaceSpot>();
         var item = _items.Dequeue();
         item.OnPlace(position);
+        place.PlaceItem(item);
 
         if (_items.Count == 0)
         {

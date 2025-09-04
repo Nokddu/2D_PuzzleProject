@@ -4251,7 +4251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7719167767137451098, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7719167767137451098, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
