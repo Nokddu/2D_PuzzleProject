@@ -18,6 +18,7 @@ public class Door : MonoBehaviour
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         CloseDoor();
+        
     }
 
     public void OpenDoor()

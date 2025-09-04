@@ -50,21 +50,22 @@ public class PlayerGetInteract : MonoBehaviour
         var position = transform.position;
         var direction = _controller.Forward;
         var size = new Vector2(1f, 1f);
-        var a = Physics2D.OverlapCircleNonAlloc(position, 5f, _hits01, mask01);
-        var b = Physics2D.OverlapCircleNonAlloc(position, 5f, _hits02, mask02);
+        var a = Physics2D.OverlapCircleNonAlloc(position, 0.8f, _hits01, mask01);
+        var b = Physics2D.OverlapCircleNonAlloc(position, 0.8f, _hits02, mask02);
         var length = a + b;
-        
+        Debug.Log($"{a}. {b}");
         switch (length)
         {
             case 1:
-                var itemObject = _hits01[0].gameObject;
-                if (itemObject.HasComponent<Item>())
+                if (a == 1)
                 {
-                    Pick(itemObject);
+                    Pick(_hits01[0].gameObject);
+                    
                 }
                 else
                 {
-                    Drop(itemObject);
+                    Debug.Log("여기는 넘어가니");
+                    Drop(_hits02[0].gameObject);
                 }
                 break;
             case 2:
@@ -86,6 +87,7 @@ public class PlayerGetInteract : MonoBehaviour
 
     private void Drop(GameObject placementObject)
     {
+        Debug.Log("넘어가니");
         var position = placementObject.transform.position;
         
         var item = _items.Dequeue();
