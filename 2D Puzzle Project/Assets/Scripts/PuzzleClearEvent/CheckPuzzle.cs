@@ -26,7 +26,7 @@ public class CheckPuzzle : MonoBehaviour
         }
 
         bool chairclear = (chairManager == null || chairManager.CheckChairs());
-        bool itemClear = (itemPlace == null || itemPlace.HasItem);
+        bool itemClear = (itemPlace == null || itemPlace.placedItem == ItemType.Book);
 
         if(chairclear && itemClear)
         {
