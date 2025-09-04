@@ -20,6 +20,7 @@ public class Door : MonoBehaviour
     [SerializeField] private SpriteRenderer doorLight;
     [SerializeField] private DoorType doorType;
 
+
     private void Awake()
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -53,10 +54,7 @@ public class Door : MonoBehaviour
 
         spriteRenderer.sprite = closeDoor;
 
-        if (scenePortal != null)
-        {
-            EnablePortal(false);
-        }
+        EnablePortal(false);
     }
 
     private void EnablePortal(bool isEnable)
@@ -66,22 +64,6 @@ public class Door : MonoBehaviour
             var col = scenePortal.GetComponent<BoxCollider2D>();
             if (col != null)
                 col.enabled = isEnable;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(spriteRenderer.sprite == openDoor)
-        {
-            if(doorType == DoorType.ExitGame)
-            {
-#if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-#else
-                Application.Quit();
-#endif
-            }
-
         }
     }
 }
