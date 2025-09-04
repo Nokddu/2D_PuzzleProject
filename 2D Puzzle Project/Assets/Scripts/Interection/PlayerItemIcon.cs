@@ -25,14 +25,26 @@ public class PlayerItemIcon : MonoBehaviour
         {
             case ItemType.Duck:
                 duckIcon.SetActive(true);
+                bookIcon.SetActive(false);
+                redBallIcon.SetActive(false);
+                openbookIcon.SetActive(false);
                 break;
             case ItemType.Book:
+                duckIcon.SetActive(false);
                 bookIcon.SetActive(true);
+                redBallIcon.SetActive(false);
+                openbookIcon.SetActive(false);
                 break;
             case ItemType.RedBall:
+                duckIcon.SetActive(false);
+                bookIcon.SetActive(false);
                 redBallIcon.SetActive(true);
+                openbookIcon.SetActive(false);
                 break;
             case ItemType.OpenBook:
+                duckIcon.SetActive(false);
+                bookIcon.SetActive(false);
+                redBallIcon.SetActive(false);
                 openbookIcon.SetActive(true);
                 break;
             case ItemType.None:

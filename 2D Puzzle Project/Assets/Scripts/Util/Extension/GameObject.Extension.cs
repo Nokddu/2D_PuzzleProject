@@ -8,5 +8,10 @@ namespace Backend.Util.Extension
         {
             return (mask.value & (1 << gameObject.layer)) != 0;
         }
+
+        public static bool HasComponent<T>(this GameObject gameObject)
+        {
+            return gameObject.TryGetComponent<T>(out var component);
+        }
     }
 }

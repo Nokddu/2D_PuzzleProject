@@ -4717,7 +4717,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPicradius: 1
   iconManager: {fileID: 1170162075}
-  heldItem: {fileID: 0}
+  mask01:
+    serializedVersion: 2
+    m_Bits: 512
+  mask02:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!114 &1170162077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6506,6 +6511,7 @@ MonoBehaviour:
   closeDoor: {fileID: 162073214, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   scenePortal: {fileID: 1509865377}
   isStartDoor: 0
+  doorLight: {fileID: 0}
 --- !u!114 &2623663295880989911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6522,6 +6528,7 @@ MonoBehaviour:
   closeDoor: {fileID: 162073214, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   scenePortal: {fileID: 1558718968}
   isStartDoor: 0
+  doorLight: {fileID: 0}
 --- !u!61 &3926090919060002496
 BoxCollider2D:
   m_ObjectHideFlags: 0
