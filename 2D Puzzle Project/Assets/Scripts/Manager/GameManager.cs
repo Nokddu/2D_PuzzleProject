@@ -12,7 +12,6 @@ public class GameManager : SingletonGameObject<GameManager>
 
     [SerializeField] private List<Item> items = new();
 
-    [SerializeField] private int hp;
     public int HP
     {
         get => DataManager.SaveData.hp;
@@ -82,7 +81,7 @@ public class GameManager : SingletonGameObject<GameManager>
 
     public void GameOver()
     {
-        hp = 3;
+        HP = 3;
         DataManager.ResetData();
         ExitGame();
     }
