@@ -1,77 +1,99 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Backend.Object.Character;
+using Backend.Util.Extension;
 
 public class PlayerGetInteract : MonoBehaviour
 {
     [SerializeField] private float itemPicradius = 5f;
     [SerializeField] private PlayerItemIcon iconManager;
 
-    [SerializeField] private Item heldItem = null;
+    [SerializeField] private LayerMask mask01;
+    [SerializeField] private LayerMask mask02;
 
+    private Queue<Item> _items;
+    private Collider2D[] _hits01;
+    private Collider2D[] _hits02;
 
-    void Start()
+    private PlayerCharacterMovementController _controller;
+
+    private void Awake()
+    {
+        _controller = GetComponent<PlayerCharacterMovementController>();
+
+        _items = new Queue<Item>();
+        _hits01 = new Collider2D[1];
+        _hits02 = new Collider2D[1];
+    }
+
+    private void Start()
     {
         iconManager.UpdateIcon(ItemType.None);
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            TryInteract();
+            Interact();
         }
     }
-    private void TryInteract()
+
+    private void OnDrawGizmos()
     {
-        Collider2D[] collider = Physics2D.OverlapCircleAll(transform.position, itemPicradius);
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 1f);
+    }
+
+    private void Interact()
+    {
+        var position = transform.position;
+        var direction = _controller.Forward;
+        var size = new Vector2(1f, 1f);
+        var a = Physics2D.OverlapCircleNonAlloc(position, 5f, _hits01, mask01);
+        var b = Physics2D.OverlapCircleNonAlloc(position, 5f, _hits02, mask02);
+        var length = a + b;
         
-
-        foreach(var col in collider)
+        switch (length)
         {
-            IInteractable interactable = col.GetComponent<IInteractable>();
-            if(interactable != null)
-            {
-                interactable.Interact();
-            }
-            // 아이템 줍기
-            Item item = col.GetComponent<Item>();
-            if(item != null && heldItem == null)
-            {
-                heldItem = item;
-                item.OnPick();
-                iconManager.UpdateIcon(item.GetItemType());
-                return;
-            }
-            // 아이템 놓기
-            ItemPlaceSpot spot = col.GetComponent<ItemPlaceSpot>();
-            
-            if (spot != null && heldItem != null)
-            {
-                if(spot.GetItem() == null)
+            case 1:
+                var itemObject = _hits01[0].gameObject;
+                if (itemObject.HasComponent<Item>())
                 {
-                    spot.PlaceItem(heldItem);
-                    Debug.Log(spot);
-                    heldItem = null;
-                    iconManager.UpdateIcon(ItemType.None);
-                    return;
-
+                    Pick(itemObject);
                 }
                 else
                 {
-                    Item SpotItem = spot.GetItem();
-                    spot.PlaceItem(heldItem);
-                    heldItem = SpotItem;
+                    Drop(itemObject);
+                }
+                break;
+            case 2:
+                Pick(_hits01[0].gameObject);
+                Drop(_hits02[0].gameObject);
+                break;
+        }
+    }
 
-                    if(heldItem != null)
-                    {
-                        heldItem.OnPick();
-                    }
+    private void Pick(GameObject itemObject)
+    {
+        var item = itemObject.GetComponent<Item>();
+        
+        _items.Enqueue(item);
 
-                    iconManager.UpdateIcon(heldItem != null ? heldItem.GetItemType() : ItemType.None);
-                    return;
-                }      
-            }
+        item.OnPick();
+        iconManager.UpdateIcon(item.GetItemType());
+    }
+
+    private void Drop(GameObject placementObject)
+    {
+        var position = placementObject.transform.position;
+        
+        var item = _items.Dequeue();
+        item.OnPlace(position);
+
+        if (_items.Count == 0)
+        {
+            iconManager.UpdateIcon(ItemType.None);
         }
     }
 }

@@ -13,10 +13,10 @@ public class CheckPuzzle : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("조건 체크중");
+        // Debug.Log("조건 체크중");
         if(!isClear)
         {
-            CheckClearCondition();
+            // CheckClearCondition();
         }
     }
     private void CheckClearCondition()
