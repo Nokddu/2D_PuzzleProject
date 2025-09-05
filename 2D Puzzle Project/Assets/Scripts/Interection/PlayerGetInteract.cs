@@ -81,8 +81,8 @@ public class PlayerGetInteract : MonoBehaviour
             case 2:
                 if (_items.Count == 1)
                 {
-                    Drop(b.collider.gameObject);
                     Pick(a.collider.gameObject);
+                    Drop(b.collider.gameObject);
                 }
                 else if (_items.Count == 0)
                 {
