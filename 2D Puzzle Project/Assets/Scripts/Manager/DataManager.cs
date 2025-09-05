@@ -33,14 +33,17 @@ public class DataManager : Singleton<DataManager>
     private void LoadGameData_Internal()
     {
         string path = Path.Combine(Application.persistentDataPath, "SaveData.json");
+        string json = string.Empty;
 
         if (!File.Exists(path))
         {
             Debug.Log($"세이브 파일이 없습니다.{path}에 세이브 파일 생성");
             SaveData = new SaveData();
+
+            json = JsonUtility.ToJson(SaveData, true);
         }
 
-        string json = File.ReadAllText(path);
+        json = File.ReadAllText(path);
 
         SaveData = JsonUtility.FromJson<SaveData>(json);
 
