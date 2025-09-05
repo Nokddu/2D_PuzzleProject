@@ -20,6 +20,8 @@ public class Chap1Clear : BaseChapClear
 
     private void Update()
     {
+        if (itemPlaceSpot == null) return;
+
         var item = itemPlaceSpot.placedItem;
 
         if(item != lastCheckItem)

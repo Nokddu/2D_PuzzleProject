@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,10 +16,10 @@ public class Door : MonoBehaviour
 {
     [SerializeField] private Sprite openDoor;
     [SerializeField] private Sprite closeDoor;
-    [SerializeField] private SceneMoveTrigger scenePortal;
+    [SerializeField] private SceneMoveTrigger[] scenePortals;
     private SpriteRenderer spriteRenderer;
     [SerializeField] private SpriteRenderer doorLight;
-    [SerializeField] private DoorType doorType;
+    [SerializeField] private DoorType currentDoorType = DoorType.Normal;
 
 
     private void Awake()
@@ -27,23 +28,29 @@ public class Door : MonoBehaviour
         CloseDoor();   
     }
 
+    public void SetDoorType(DoorType newType)
+    {
+        currentDoorType = newType;
+    }
     public void OpenDoor()
     {
         SoundManager.Ins.PlaySound("EventOn");
         spriteRenderer.sprite = openDoor;
 
-        switch(doorType)
+        switch(currentDoorType)
         {
             case DoorType.Normal:
-                EnablePortal(true);
+                EnablePortal(0, true);
                 break;
             case DoorType.NextStage:
                 doorLight.color = Color.green;
-                EnablePortal(true);
+                EnablePortal(0, true);
+                EnablePortal(1, false);
                 break;
             case DoorType.ExitGame:
                 doorLight.color = Color.red;
-                EnablePortal(true);
+                EnablePortal(0, false);
+                EnablePortal(1, true);
                 break;
         }
     }
@@ -54,17 +61,21 @@ public class Door : MonoBehaviour
 
         spriteRenderer.sprite = closeDoor;
 
-        EnablePortal(false);
+        foreach (var portal in scenePortals)
+            EnableCollider(portal, false);
     }
 
-    private void EnablePortal(bool isEnable)
+    private void EnablePortal(int index, bool isEnable)
     {
-        if(scenePortal != null)
-        {
-            var col = scenePortal.GetComponent<BoxCollider2D>();
-            if (col != null)
-                col.enabled = isEnable;
-        }
+        if (scenePortals != null && index < scenePortals.Length && scenePortals[index] != null)
+            EnableCollider(scenePortals[index], isEnable);
+    }
+
+    private void EnableCollider(SceneMoveTrigger portal, bool isEnable)
+    {
+        var col = portal.GetComponent<BoxCollider2D>();
+        if (col != null)
+            col.enabled = isEnable;
     }
 }
 

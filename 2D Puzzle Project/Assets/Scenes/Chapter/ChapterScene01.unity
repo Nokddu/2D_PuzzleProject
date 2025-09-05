@@ -2069,6 +2069,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3314899689151896432, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
   m_PrefabInstance: {fileID: 571757501}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &571757503 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6933806016880605382, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+  m_PrefabInstance: {fileID: 571757501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571757502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fed7d0493102144ab33387276b3c6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &571757504
 Rigidbody2D:
   serializedVersion: 4
@@ -3712,7 +3723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secretDoor: {fileID: 1057036194}
-  itemPlaceSpot: {fileID: 0}
+  itemPlaceSpot: {fileID: 571757503}
   leftDoor: {fileID: 2623663295880989911}
   rightDoor: {fileID: 2623663294840353927}
 --- !u!4 &1114019875
@@ -4731,7 +4742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fffb81fee9c894bbe0322611c4a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 0
+  sceneNum: -1
+  isExit: 1
 --- !u!61 &1229159554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5681,6 +5693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 4
+  isExit: 0
 --- !u!61 &1509865378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5813,6 +5826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 3
+  isExit: 0
 --- !u!61 &1558718969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6123,6 +6137,14 @@ PrefabInstance:
       propertyPath: foothold.Array.data[0]
       value: 
       objectReference: {fileID: 354937401}
+    - target: {fileID: 2623663295035885635, guid: 92f2849bd43c329478a37c5ef552a333, type: 3}
+      propertyPath: scenePortals.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623663295035885635, guid: 92f2849bd43c329478a37c5ef552a333, type: 3}
+      propertyPath: scenePortals.Array.data[0]
+      value: 
+      objectReference: {fileID: 1229159553}
     - target: {fileID: 8027755676290655991, guid: 92f2849bd43c329478a37c5ef552a333, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4986105
@@ -6534,9 +6556,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openDoor: {fileID: 561746739, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   closeDoor: {fileID: 162073214, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
-  scenePortal: {fileID: 1509865377}
+  scenePortals:
+  - {fileID: 1509865377}
   doorLight: {fileID: 0}
-  doorType: 0
+  currentDoorType: 0
 --- !u!114 &2623663295880989911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6551,9 +6574,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openDoor: {fileID: 561746739, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
   closeDoor: {fileID: 162073214, guid: 38b9896b5c459be4da5b07a07302c471, type: 3}
-  scenePortal: {fileID: 1558718968}
+  scenePortals:
+  - {fileID: 1558718968}
   doorLight: {fileID: 0}
-  doorType: 0
+  currentDoorType: 0
 --- !u!1001 &4376369280700356902
 PrefabInstance:
   m_ObjectHideFlags: 0

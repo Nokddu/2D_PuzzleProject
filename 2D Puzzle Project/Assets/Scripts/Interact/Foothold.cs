@@ -9,6 +9,7 @@ public class Foothold : MonoBehaviour
     [SerializeField] private Sprite offSprite;
     [SerializeField] private Foothold[] otherFootholds;
     [SerializeField] private Door connectedDoor;
+    [SerializeField] private DoorType doorType;
 
     private bool isOn = false;
 
@@ -49,6 +50,7 @@ public class Foothold : MonoBehaviour
 
         if(connectedDoor != null)
         {
+            connectedDoor.SetDoorType(doorType);
             connectedDoor.OpenDoor();
         }
 
