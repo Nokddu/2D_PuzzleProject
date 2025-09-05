@@ -37,6 +37,7 @@ public class DataManager : Singleton<DataManager>
         if (!File.Exists(path))
         {
             Debug.Log($"세이브 파일이 없습니다.{path}에 세이브 파일 생성");
+            SaveData = new SaveData();
         }
 
         string json = File.ReadAllText(path);
