@@ -38,6 +38,7 @@ public class DataManager : Singleton<DataManager>
         {
             Debug.Log($"세이브 파일이 없습니다.{path}에 세이브 파일 생성");
             SaveData = new SaveData();
+            SaveGameData_Internal();
         }
 
         string json = File.ReadAllText(path);
