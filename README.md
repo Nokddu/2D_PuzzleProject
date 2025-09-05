@@ -47,3 +47,11 @@ X	점프 (장애물 회피)
 
 
 **목표**: 각 방의 테이블에 알맞은 오브젝트를 올려놓으면 다음 방으로 가는 문이 열립니다. 모든 방의 퍼즐을 풀어 엔딩에 도달하는 것이 목표입니다.
+
+# 사용한 에셋
+## 캐릭터
+<https://otterisk.itch.io/hana-caraka-base-character>
+## UI
+<https://otterisk.itch.io/hana-caraka-base-character>
+## 배경
+<https://penzilla.itch.io/top-down-retro-interior>
