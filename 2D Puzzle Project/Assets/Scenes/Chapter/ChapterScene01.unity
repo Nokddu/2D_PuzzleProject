@@ -5692,7 +5692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fffb81fee9c894bbe0322611c4a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 4
+  sceneNum: 3
   isExit: 0
 --- !u!61 &1509865378
 BoxCollider2D:
@@ -5825,7 +5825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fffb81fee9c894bbe0322611c4a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 3
+  sceneNum: 2
   isExit: 0
 --- !u!61 &1558718969
 BoxCollider2D:

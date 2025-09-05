@@ -597,6 +597,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerHpUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1435406425047403979, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435406425047403979, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435406425047403979, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812422884189461667, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812422884189461667, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1812422884189461667, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908404003116354447, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908404003116354447, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908404003116354447, guid: d6251c137a3fbdd4cb5a9d7798a552c7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2299,7 +2335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fffb81fee9c894bbe0322611c4a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNum: 2
+  sceneNum: 1
+  isExit: 0
 --- !u!61 &780643889
 BoxCollider2D:
   m_ObjectHideFlags: 0
