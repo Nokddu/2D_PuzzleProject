@@ -2069,6 +2069,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3314899689151896432, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
   m_PrefabInstance: {fileID: 571757501}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &571757503 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6933806016880605382, guid: 82c5d5a280d0b7b479d8d472c541fa3d, type: 3}
+  m_PrefabInstance: {fileID: 571757501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571757502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fed7d0493102144ab33387276b3c6b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &571757504
 Rigidbody2D:
   serializedVersion: 4
@@ -3712,7 +3723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secretDoor: {fileID: 1057036194}
-  itemPlaceSpot: {fileID: 0}
+  itemPlaceSpot: {fileID: 571757503}
   leftDoor: {fileID: 2623663295880989911}
   rightDoor: {fileID: 2623663294840353927}
 --- !u!4 &1114019875
@@ -4732,6 +4743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 0
+  isExit: 0
 --- !u!61 &1229159554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5681,6 +5693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 4
+  isExit: 0
 --- !u!61 &1509865378
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5813,6 +5826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNum: 3
+  isExit: 0
 --- !u!61 &1558718969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5996,6 +6010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Button01: {fileID: 807077229}
   Button02: {fileID: 2081229185}
+  Book: {fileID: 0}
 --- !u!1 &1603860061
 GameObject:
   m_ObjectHideFlags: 0
