@@ -90,7 +90,7 @@ namespace Backend.Util.Input
                 {
                     ""name"": """",
                     ""id"": ""8154e1b8-6828-49a1-bec0-a6de8d03bd09"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Desktop"",
@@ -101,7 +101,7 @@ namespace Backend.Util.Input
                 {
                     ""name"": """",
                     ""id"": ""efe4350a-2f42-4f96-8701-98d3787e0d17"",
-                    ""path"": ""<Keyboard>/s"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Desktop"",
@@ -112,7 +112,7 @@ namespace Backend.Util.Input
                 {
                     ""name"": """",
                     ""id"": ""ff080ada-4b5c-4314-87bf-d8d11d3c16fa"",
-                    ""path"": ""<Keyboard>/w"",
+                    ""path"": ""<Keyboard>/upArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Desktop"",
@@ -123,7 +123,7 @@ namespace Backend.Util.Input
                 {
                     ""name"": """",
                     ""id"": ""62696776-b608-454b-be80-0276cbccd300"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Desktop"",
