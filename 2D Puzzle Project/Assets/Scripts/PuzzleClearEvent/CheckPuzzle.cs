@@ -10,6 +10,14 @@ public class CheckPuzzle : MonoBehaviour
 
     public bool isClear = false;
 
+    private void Awake()
+    {
+        if (DataManager.SaveData.isClear[1] == true)
+        {
+            BaseChapClear.ClearEvent();
+        }
+    }
+
     private void Update()
     {
         if(!isClear)
